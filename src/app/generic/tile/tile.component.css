@@ -1,0 +1,28 @@
+.tile-wrapper {
+  padding: 10px;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.tile {
+  height: 100%;
+  background-color: white;
+}
+
+.tile-header {
+  padding: 10px;
+}
+
+.tile-header > h2 {
+  color: white;
+  padding: 0;
+  margin: 0;
+  font-size: 13pt;
+}
+
+.tile-content {
+  padding: 10px;
+  text-align: justify;
+  overflow-y: auto;
+  max-height: calc(100% - 61px);
+}

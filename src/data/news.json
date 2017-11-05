@@ -1,0 +1,36 @@
+[
+  {
+    "id": 1,
+    "title": "Title A",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eu velit ex. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur interdum orci sit amet sapien placerat ultrices. Curabitur iaculis tortor sed turpis dapibus facilisis. Nulla facilisi. Phasellus non aliquet velit, eget volutpat mauris. In.",
+    "tags": [
+      {
+        "id": 1,
+        "label": "projects",
+        "color": "yellow"
+      },
+      {
+        "id": 2,
+        "label": "people",
+        "color": "green"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Title B",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eu velit ex. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur interdum orci sit amet sapien placerat ultrices. Curabitur iaculis tortor sed turpis dapibus facilisis. Nulla facilisi. Phasellus non aliquet velit, eget volutpat mauris. In.",
+    "tags": [
+      {
+        "id": 1,
+        "label": "faculty",
+        "color": "red"
+      },
+      {
+        "id": 2,
+        "label": "people",
+        "color": "green"
+      }
+    ]
+  }
+]

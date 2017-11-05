@@ -1,0 +1,26 @@
+div#tiles-wrapper, div#small-tiles, div#small-tiles > div {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+div#small-tiles {
+  flex-direction: column;
+}
+
+div#tiles-wrapper > div, div#small-tiles > div, div#small-tiles > div > div {
+  flex: 1 1 50%;
+}
+
+div#big-tile {
+  min-height: 800px;
+  max-height: 800px;
+}
+
+div#small-tiles > div > div {
+  min-height: 400px;
+  max-height: 400px;
+}
+
+div#tiles-wrapper > div, div#small-tiles, div#small-tiles > div > div {
+  min-width: 300px;
+}
