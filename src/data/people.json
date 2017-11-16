@@ -1,0 +1,134 @@
+[
+  {
+    "id": 1,
+    "firstname": "Zuzana",
+    "lastname": "Arnerová",
+    "email": "abcdef@mail.muni.cz",
+    "photo": "http://thecatapi.com/api/images/get?format=src&type=png&size=small",
+    "bio": "http://www.muni.cz/people/401328/cv",
+    "fields": [
+      {
+        "id": 1,
+        "name": "rozvoj venkova a místní akční skupiny"
+      },
+      {
+        "id": 2,
+        "name": "financování z fondů EU"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "firstname": "Marie",
+    "lastname": "Hladká",
+    "email": "abcdef@mail.muni.cz",
+    "photo": "http://thecatapi.com/api/images/get?format=src&type=png&size=small",
+    "bio": "http://www.muni.cz/people/62635/cv",
+    "fields": [
+      {
+        "id": 3,
+        "name": "dárcovství a dobrovolnictví"
+      },
+      {
+        "id": 4,
+        "name": "účetní a daňová specifika neziskových organizací"
+      },
+      {
+        "id": 5,
+        "name": "finanční řízení a rozpočetnictví v neziskových organizacích"
+      },
+      {
+        "id": 6,
+        "name": "financování neziskových organizací"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "firstname": "Vladimír",
+    "lastname": "Hyánek",
+    "email": "abcdef@mail.muni.cz",
+    "photo": "http://thecatapi.com/api/images/get?format=src&type=png&size=small",
+    "bio": "http://is.muni.cz/zivotopisy/cv.pl?uco=1953;lang=cs",
+    "fields": [
+      {
+        "id": 8,
+        "name": "teorie neziskového sektoru"
+      },
+      {
+        "id": 9,
+        "name": "veřejné služby"
+      },
+      {
+        "id": 10,
+        "name": "sociální inovace"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "firstname": "Jaroslav",
+    "lastname": "Benák",
+    "email": "abcdef@mail.muni.cz",
+    "photo": "http://thecatapi.com/api/images/get?format=src&type=png&size=small",
+    "bio": "http://www.muni.cz/people/170356/publications",
+    "fields": [
+      {
+        "id": 11,
+        "name": "právní regulace občanských sdružení"
+      },
+      {
+        "id": 12,
+        "name": "právo na přístup k soudu"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "firstname": "Ondřej",
+    "lastname": "Císař",
+    "email": "abcdef@mail.muni.cz",
+    "photo": "http://thecatapi.com/api/images/get?format=src&type=png&size=small",
+    "bio": "http://www.muni.cz/people/7594/cv",
+    "fields": [
+      {
+        "id": 13,
+        "name": "politická mobilizace"
+      },
+      {
+        "id": 14,
+        "name": "sociální hnutí"
+      },
+      {
+        "id": 15,
+        "name": "transnacionální spolupráce"
+      },
+      {
+        "id": 16,
+        "name": "evropeizace"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "firstname": "Lukáš",
+    "lastname": "Fasora",
+    "email": "abcdef@mail.muni.cz",
+    "photo": "http://thecatapi.com/api/images/get?format=src&type=png&size=small",
+    "bio": "http://www.muni.cz/people/6736/publications",
+    "fields": [
+      {
+        "id": 17,
+        "name": "vývoj občanské společnosti v 19. století"
+      },
+      {
+        "id": 18,
+        "name": "vzájemné vztahy dělnicta a měšťanstva v moderní éře"
+      },
+      {
+        "id": 19,
+        "name": "otázka sociální mobility a dějin vzdělávání"
+      }
+    ]
+  }
+]

@@ -1,0 +1,119 @@
+[
+  {
+    "id": 1,
+    "name": "Dárcovské motivy a determinanty v České republice",
+    "contact": {
+      "id": 2,
+      "firstname": "Marie",
+      "lastname": "Hladká"
+    },
+    "text": "tba",
+    "image": "http://thecatapi.com/api/images/get?format=src&type=png&size=small",
+    "from": "Sept 2017",
+    "to": "Sept 2020"
+  },
+  {
+    "id": 2,
+    "name": "Dostupnost a kvalita dat o NO",
+    "contact": {
+      "id": 2,
+      "firstname": "Marie",
+      "lastname": "Hladká"
+    },
+    "text": "tba",
+    "image": "http://thecatapi.com/api/images/get?format=src&type=png&size=small",
+    "from": "Oct 2016",
+    "to": "Dec 2018"
+  },
+  {
+    "id": 3,
+    "name": "European Foundations for Research and Innovation (EUFORI) Study",
+    "contact": {
+      "id": 2,
+      "firstname": "Marie",
+      "lastname": "Hladká"
+    },
+    "text": "tba",
+    "image": "http://thecatapi.com/api/images/get?format=src&type=png&size=small",
+    "from": "Oct 2016",
+    "to": "Dec 2018"
+  },
+  {
+    "id": 4,
+    "name": "Rozbor financování NNO z veřejných rozpočtů",
+    "contact": {
+      "id": 2,
+      "firstname": "Marie",
+      "lastname": "Hladká"
+    },
+    "text": "tba",
+    "image": "http://thecatapi.com/api/images/get?format=src&type=png&size=small",
+    "from": "Oct 2016",
+    "to": "Dec 2018"
+  },
+  {
+    "id": 5,
+    "name": "Social Innovation and Civic Engagement – FP7",
+    "contact": {
+      "id": 2,
+      "firstname": "Marie",
+      "lastname": "Hladká"
+    },
+    "text": "tba",
+    "image": "http://thecatapi.com/api/images/get?format=src&type=png&size=small",
+    "from": "Oct 2016",
+    "to": "Dec 2018"
+  },
+  {
+    "id": 6,
+    "name": "Third sector organizations in rural development: a theoretical and empirical analysis",
+    "contact": {
+      "id": 2,
+      "firstname": "Marie",
+      "lastname": "Hladká"
+    },
+    "text": "tba",
+    "image": "http://thecatapi.com/api/images/get?format=src&type=png&size=small",
+    "from": "Oct 2016",
+    "to": "Dec 2018"
+  },
+  {
+    "id": 7,
+    "name": "Vliv veřejných financí na strukturu zdrojů a produkci NI",
+    "contact": {
+      "id": 2,
+      "firstname": "Marie",
+      "lastname": "Hladká"
+    },
+    "text": "tba",
+    "image": "http://thecatapi.com/api/images/get?format=src&type=png&size=small",
+    "from": "Oct 2016",
+    "to": "Dec 2018"
+  },
+  {
+    "id": 8,
+    "name": "Vytvoření Satelitního účtu neziskových institucí",
+    "contact": {
+      "id": 2,
+      "firstname": "Marie",
+      "lastname": "Hladká"
+    },
+    "text": "tba",
+    "image": "http://thecatapi.com/api/images/get?format=src&type=png&size=small",
+    "from": "Oct 2016",
+    "to": "Dec 2018"
+  },
+  {
+    "id": 9,
+    "name": "CVNS: výzkum a lidské zdroje",
+    "contact": {
+      "id": 2,
+      "firstname": "Marie",
+      "lastname": "Hladká"
+    },
+    "text": "tba",
+    "image": "http://thecatapi.com/api/images/get?format=src&type=png&size=small",
+    "from": "Oct 2016",
+    "to": "Dec 2018"
+  }
+]

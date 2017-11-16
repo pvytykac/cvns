@@ -1,7 +1,9 @@
 <div id="tiles-wrapper">
   <div id="big-tile">
     <app-tile title="News" color="#f44336" [items]="news()" [route]="'news'" [icon]="'newspaper-o'">
-      <ng-template let-item>{{item.id}}: {{item.title}}</ng-template>
+      <ng-template let-item>
+        <app-news-item [item]="item"></app-news-item>
+      </ng-template>
     </app-tile>
   </div>
   <div id="small-tiles">
@@ -19,19 +21,25 @@
       </div>
       <div>
         <app-tile title="People" color="#ff9800" [items]="people()" [route]="'people'" [icon]="'user'">
-          <ng-template let-item>{{item.id}}: {{item.title}}</ng-template>
+          <ng-template let-item>
+            <app-people-item [person]="item"></app-people-item>
+          </ng-template>
         </app-tile>
       </div>
     </div>
     <div>
       <div>
         <app-tile title="Projects" color="#009688" [items]="projects()" [route]="'projects'" [icon]="'line-chart'">
-          <ng-template let-item>{{item.id}}: {{item.title}}</ng-template>
+          <ng-template let-item>
+            <app-projects-item [project]="item"></app-projects-item>
+          </ng-template>
         </app-tile>
       </div>
       <div>
         <app-tile title="Publications" color="#3f51b5" [items]="publications()" [route]="'publications'" [icon]="'book'">
-          <ng-template let-item>{{item.id}}: {{item.title}}</ng-template>
+          <ng-template let-item>
+            <app-publications-item [publication]="item"></app-publications-item>
+          </ng-template>
         </app-tile>
       </div>
     </div>

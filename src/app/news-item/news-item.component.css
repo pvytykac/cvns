@@ -1,0 +1,26 @@
+.news-item-inner-wrapper {
+  padding: 10px;
+}
+
+.news-item-outer-wrapper {
+  margin: 10px;
+}
+
+.news-item-header {
+  font-size: 18pt;
+}
+
+.news-item-body {
+
+}
+
+.news-item-footer {
+  margin-top: 5px;
+}
+
+.tag-box {
+  box-sizing: border-box;
+  border-radius: 20px;
+  padding: 5px;
+  color: white;
+}

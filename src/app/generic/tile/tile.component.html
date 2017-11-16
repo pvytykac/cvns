@@ -3,7 +3,7 @@
     <div class="tile-header clickable" [ngStyle]="getStyle()" (click)="onClick($event)" style="position: relative;">
       <h2>{{title}}</h2>
       <i *ngIf="icon" ngClass="fa fa-{{icon}}" aria-hidden="true"
-         style="position:absolute; right: 12px; top: 12px; font-size: 13pt; color: white;"></i>
+         style="position:absolute; right: 12px; top: 8px; font-size: 20pt; color: white;"></i>
     </div>
     <div class="tile-content">
       <ng-template *ngIf="!items" [ngTemplateOutlet]="itemTemplate"

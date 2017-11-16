@@ -20,6 +20,10 @@ import { ProjectsComponent } from './pages/projects/projects.component';
 import { PersonComponent } from './pages/person/person.component';
 import { ProjectComponent } from './pages/project/project.component';
 import { PublicationComponent } from './pages/publication/publication.component';
+import { NewsItemComponent } from './news-item/news-item.component';
+import { ProjectsItemComponent } from './projects-item/projects-item.component';
+import { PublicationsItemComponent } from './publications-item/publications-item.component';
+import { PeopleItemComponent } from './people-item/people-item.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +42,11 @@ import { PublicationComponent } from './pages/publication/publication.component'
     ProjectsComponent,
     PersonComponent,
     ProjectComponent,
-    PublicationComponent
+    PublicationComponent,
+    NewsItemComponent,
+    ProjectsItemComponent,
+    PublicationsItemComponent,
+    PeopleItemComponent
   ],
   imports: [
     BrowserModule,

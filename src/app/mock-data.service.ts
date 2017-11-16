@@ -4,9 +4,11 @@ import {Person} from "./dto/Person";
 import {Publication} from "./dto/Publication";
 import {Project} from "./dto/Project";
 
+declare const require: any;
+
 const news: News[] = require("../data/news.json");
-const people: Person[] = [];
-const projects: Project[] = [];
+const people: Person[] = require("../data/people.json");
+const projects: Project[] = require("../data/projects.json");
 const publications: Publication[] = [];
 
 
