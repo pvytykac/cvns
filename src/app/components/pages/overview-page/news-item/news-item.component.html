@@ -7,7 +7,7 @@
       <span>{{item.text}}</span>
     </div>
     <div class="news-item-footer">
-      <span *ngFor="let tag of item.tags" class="tag-box" style.background-color="{{tag.color}}">{{tag.label}}</span>
+      <span *ngFor="let tag of item.tags" class="tag-box" [ngStyle]="{'background-color': tag.color}">{{tag.label}}</span>
     </div>
   </div>
 </div>

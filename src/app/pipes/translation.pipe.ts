@@ -10,7 +10,7 @@ export class TranslationPipe implements PipeTransform {
   constructor(private ts: TranslateService) {
   }
 
-  transform(value: string, args?: any): any {
+  transform(value: string): any {
     return Observable.create(observer => {
       observer.next(this.ts.translate(value));
       this.ts.subscribe(locale => observer.next(this.ts.translate(value)));

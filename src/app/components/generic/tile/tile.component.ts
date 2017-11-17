@@ -15,7 +15,7 @@ export class TileComponent implements OnInit {
   @Input() icon?: string;
   @ContentChild(TemplateRef) itemTemplate: TemplateRef<any>;
 
-  constructor(private router: Router) {}
+  constructor() {}
 
   ngOnInit() {
   }

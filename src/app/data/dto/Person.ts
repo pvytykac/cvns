@@ -7,4 +7,5 @@ export interface Person {
   fields?: Field[];
   email?: string;
   info?: string;
+  photo?: string;
 }

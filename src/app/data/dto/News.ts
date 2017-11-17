@@ -1,4 +1,4 @@
-import {Tag} from "@angular/compiler/src/i18n/serializers/xml_helper";
+import {Tag} from "./Tag";
 
 export interface News {
   id: number;

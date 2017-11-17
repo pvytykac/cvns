@@ -11,8 +11,7 @@ export class RoutingService {
     return this.router.url;
   }
 
-  routeByUrlWithoutLocale(url: string, extras?: NavigationExtras): void {
-    const urlFixed = (url.startsWith('/')) ? url : '/' + url;
+  routeByUrlWithoutLocale(url: string): void {
     this.router.navigateByUrl("/" + this.ts.getLocale().toLowerCase() + url);
   }
 
