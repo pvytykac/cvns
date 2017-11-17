@@ -1,5 +1,5 @@
 import {Directive, HostListener, Input} from '@angular/core';
-import {RoutingService} from "./locale/routing.service";
+import {RoutingService} from "../service/routing.service";
 
 @Directive({
   selector: '[appRouterLink]'

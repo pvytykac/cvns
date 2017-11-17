@@ -1,16 +1,16 @@
 import {NgModule} from '@angular/core';
 import {RouterModule} from '@angular/router';
-import {OverviewPageComponent} from './pages/overview-page/overview-page.component';
-import {ErrorPageComponent} from './layout/error-page/error-page.component';
-import {NewsComponent} from "./pages/news/news.component";
-import {AboutComponent} from "./pages/about/about.component";
-import {PeopleComponent} from "./pages/people/people.component";
-import {ProjectsComponent} from "./pages/projects/projects.component";
-import {PublicationsComponent} from "./pages/publications/publications.component";
-import {PersonComponent} from "./pages/person/person.component";
-import {ProjectComponent} from "./pages/project/project.component";
-import {PublicationComponent} from "./pages/publication/publication.component";
-import {PageTemplateComponent} from "./layout/page-template/page-template.component";
+import {OverviewPageComponent} from './components/pages/overview-page/overview-page.component';
+import {ErrorPageComponent} from './components/layout/error-page/error-page.component';
+import {NewsComponent} from "./components/pages/news/news.component";
+import {AboutComponent} from "./components/pages/about/about.component";
+import {PeopleComponent} from "./components/pages/people/people.component";
+import {ProjectsComponent} from "./components/pages/projects/projects.component";
+import {PublicationsComponent} from "./components/pages/publications/publications.component";
+import {PersonComponent} from "./components/pages/person/person.component";
+import {ProjectComponent} from "./components/pages/project/project.component";
+import {PublicationComponent} from "./components/pages/publication/publication.component";
+import {PageTemplateComponent} from "./components/layout/page-template/page-template.component";
 
 @NgModule({
   imports: [

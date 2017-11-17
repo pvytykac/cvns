@@ -1,9 +1,9 @@
 import {Component, OnInit} from '@angular/core';
-import {Info} from "../../data/dto/Info";
-import {MockDataService} from "../../data/mock-data.service";
+import {Info} from "../../../data/dto/Info";
+import {MockDataService} from "../../../data/mock-data.service";
 import {ActivatedRoute} from "@angular/router";
-import {RoutingService} from "../../locale/routing.service";
-import {TranslateService} from "../../locale/translation.service";
+import {RoutingService} from "../../../service/routing.service";
+import {TranslateService} from "../../../service/translation.service";
 
 const navItems: NavItem[] = [
   // {url: '', key: 'home', color: 'rgb(0, 0, 0)'},

@@ -1,5 +1,5 @@
 import {EventEmitter, Injectable} from '@angular/core';
-import {Lang, LangCz, LangEn, LangSk} from "./Lang";
+import {Lang, LangCz, LangEn, LangSk} from "../locale/Lang";
 
 const locales: string[] = [ "CZ", "SK", "EN" ];
 type OnLocaleChanged = (locale: string) => any;

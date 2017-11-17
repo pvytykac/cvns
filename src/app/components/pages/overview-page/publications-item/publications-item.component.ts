@@ -1,5 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {Publication} from "../../../data/dto/Publication";
+import {Publication} from "../../../../data/dto/Publication";
 
 @Component({
   selector: 'app-publications-item',
