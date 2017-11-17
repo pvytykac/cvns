@@ -15,4 +15,10 @@ export class PublicationsItemComponent implements OnInit {
   ngOnInit() {
   }
 
+  getAuthors(): string {
+    return this.publication.authors
+      .map(p => p.firstname + ' ' + p.lastname)
+      .join(', ');
+  }
+
 }

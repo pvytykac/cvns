@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {MockDataService} from "../../mock-data.service";
+import {Info} from "../../dto/Info";
 
 @Component({
   selector: 'app-footer',
@@ -7,9 +9,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FooterComponent implements OnInit {
 
-  constructor() { }
+  constructor(private data: MockDataService) { }
 
   ngOnInit() {
+  }
+
+  getInfo(): Info {
+    return this.data.getInfo();
   }
 
 }

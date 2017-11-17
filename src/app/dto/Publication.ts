@@ -5,4 +5,5 @@ export interface Publication {
   name: string;
   authors: Person[];
   year: number;
+  url: string;
 }
