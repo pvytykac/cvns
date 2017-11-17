@@ -12,13 +12,15 @@ export class RouterLinkDirective {
   }
 
   @HostListener('mousedown', ['$event'])
-  onMouseDown(event): void {
-    const url = (!this.appRouterLink || this.appRouterLink.length === 0 || this.appRouterLink.startsWith('/'))
-      ? this.appRouterLink
-      : '/' + this.appRouterLink;
-    console.log("will navigate to: " + url);
-    event.preventDefault();
-    this.rs.routeByUrlWithoutLocale(url);
+  onMouseDown(event: MouseEvent): void {
+    if (event.button === 0) {
+      const url = (!this.appRouterLink || this.appRouterLink.length === 0 || this.appRouterLink.startsWith('/'))
+        ? this.appRouterLink
+        : '/' + this.appRouterLink;
+
+      event.preventDefault();
+      this.rs.routeByUrlWithoutLocale(url);
+    }
   }
 
 }

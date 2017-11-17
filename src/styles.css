@@ -29,3 +29,7 @@ a:VISITED, a:HOVER, a {
   -moz-box-shadow: 0 0 8px 1px rgba(0,0,0,0.50);
   box-shadow: 0 0 8px 1px rgba(0,0,0,0.50);
 }
+
+.offset {
+  margin-right: 5px;
+}

@@ -1,7 +1,7 @@
 import {EventEmitter, Injectable} from '@angular/core';
-import {Lang, LangCz, LangEn} from "./Lang";
+import {Lang, LangCz, LangEn, LangSk} from "./Lang";
 
-const locales: string[] = [ "CZ", "EN" ];
+const locales: string[] = [ "CZ", "SK", "EN" ];
 type OnLocaleChanged = (locale: string) => any;
 
 @Injectable()
@@ -12,6 +12,7 @@ export class TranslateService {
   locale: string;
 
   constructor() {
+    this.map["SK"] = new LangSk();
     this.map["CZ"] = new LangCz();
     this.map["EN"] = new LangEn();
   }

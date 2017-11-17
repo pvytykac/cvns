@@ -1,31 +1,42 @@
 <div id="header" class="highlighted box-shadow">
-  <a [appRouterLink]="''" style="display: block; margin-left: 20px; margin-top: 24px;">
-    <div class="logo-wrapper">
-      <div class="logo-left">
-        <span>/CVNS/</span>
-      </div>
-      <div class="logo-right">
-        <span>CENTRUM PRO VÝZKUM</span>
+  <div id="header-inner">
+    <div id="logo" class="clickable" [appRouterLink]="''">
+      <div id="logo-left">/CVNS/</div>
+      <div id="logo-right">
+        <span>CENTRUM VÝZKUMU</span>
         <span>NEZISKOVÉHO SEKTORU</span>
       </div>
     </div>
-  </a>
-  <a href="#" *ngFor="let locale of getLocales()" (click)="setLocale($event, locale)">
-    <span>{{locale}}</span>
-  </a>
+    <div id="right">
+      <div id="menu" *ngIf="isNavMenuVisible()">
+        <span *ngFor="let navItem of getNavigationItems()"
+              [ngClass]="{'nav-menu-item': true, 'clickable': true, 'selected': isNavItemSelected(navItem)}"
+              [ngStyle]="{'background-color': navItem.color}"
+              [appRouterLink]="navItem.url">{{navItem.key | translate | async}}</span>
+      </div>
+      <div id="locale-picker">
+        <span *ngFor="let locale of getLocales()"
+              [ngClass]="{'selected': isLocaleSelected(locale), 'clickable': true}"
+              (click)="setLocale($event, locale)">{{locale}}</span>
+      </div>
+      <div id="search-widget">
+        <input type="text" placeholder="Search:"/>
+      </div>
+    </div>
+  </div>
 </div>
 <div id="content-wrapper">
   <router-outlet></router-outlet>
 </div>
 <div id="footer" class="highlighted box-shadow">
-  <div style="width: 50%; float: left;">
+  <div>
     <span>{{getInfo().name}}</span>
     <span>{{getInfo().address}}</span>
     <span>{{getInfo().phone}}</span>
     <span>{{getInfo().email}}</span>
   </div>
-  <div style="width: 50%; float: left;">
+  <div>
     <span *ngFor="let sponsor of getInfo().sponsors">{{sponsor}}</span>
   </div>
-  &copy; 2017 CVNS Uvedená práce (dílo) podléhá licenci Creative Commons Uveďte autora 3.0 Česko
+  <span>&copy; 2017 CVNS Uvedená práce (dílo) podléhá licenci Creative Commons Uveďte autora 3.0 Česko</span>
 </div>
