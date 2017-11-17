@@ -1,5 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {Person} from "../dto/Person";
+import {Person} from "../../../data/dto/Person";
 
 @Component({
   selector: 'app-people-item',

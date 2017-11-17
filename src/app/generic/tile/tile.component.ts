@@ -26,14 +26,4 @@ export class TileComponent implements OnInit {
     };
   }
 
-  onClick(event: MouseEvent): void {
-    if (this.route) {
-      this.router.navigate([this.route]);
-
-      if (event) {
-        event.preventDefault();
-      }
-    }
-  }
-
 }

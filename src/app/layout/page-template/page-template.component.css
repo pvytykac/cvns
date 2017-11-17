@@ -1,0 +1,45 @@
+div#content-wrapper {
+  margin: 10px;
+  min-height: 800px;
+}
+
+#footer {
+  height: 250px;
+}
+
+div#header {
+  height: 80px;
+}
+
+div#header * {
+  display: inline-block;
+  float: left
+}
+
+div#content-wrapper {
+  margin: 10px;
+  min-height: 800px;
+}
+
+.logo-wrapper {
+  vertical-align: middle;
+}
+
+.logo-wrapper, .logo-wrapper > div {
+  display: table-cell;
+}
+
+.logo-wrapper > div {
+  vertical-align: top;
+}
+
+.logo-left > span {
+  font-size: 21pt;
+}
+
+.logo-right > span {
+  padding-top: 2px;
+  font-size: 8pt;
+  margin-left: 2px;
+  display: block;
+}

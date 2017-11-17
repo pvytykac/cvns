@@ -1,6 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {News} from "../../dto/News";
-import {MockDataService} from "../../mock-data.service";
+import {MockDataService} from "../../data/mock-data.service";
 
 @Component({
   selector: 'app-overview-page',

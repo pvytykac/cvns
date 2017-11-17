@@ -1,0 +1,31 @@
+<div id="header" class="highlighted box-shadow">
+  <a [appRouterLink]="''" style="display: block; margin-left: 20px; margin-top: 24px;">
+    <div class="logo-wrapper">
+      <div class="logo-left">
+        <span>/CVNS/</span>
+      </div>
+      <div class="logo-right">
+        <span>CENTRUM PRO VÝZKUM</span>
+        <span>NEZISKOVÉHO SEKTORU</span>
+      </div>
+    </div>
+  </a>
+  <a href="#" *ngFor="let locale of getLocales()" (click)="setLocale($event, locale)">
+    <span>{{locale}}</span>
+  </a>
+</div>
+<div id="content-wrapper">
+  <router-outlet></router-outlet>
+</div>
+<div id="footer" class="highlighted box-shadow">
+  <div style="width: 50%; float: left;">
+    <span>{{getInfo().name}}</span>
+    <span>{{getInfo().address}}</span>
+    <span>{{getInfo().phone}}</span>
+    <span>{{getInfo().email}}</span>
+  </div>
+  <div style="width: 50%; float: left;">
+    <span *ngFor="let sponsor of getInfo().sponsors">{{sponsor}}</span>
+  </div>
+  &copy; 2017 CVNS Uvedená práce (dílo) podléhá licenci Creative Commons Uveďte autora 3.0 Česko
+</div>
