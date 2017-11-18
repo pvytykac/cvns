@@ -25,3 +25,12 @@ a:VISITED, a:HOVER, a {
   -moz-box-shadow: 0 0 8px 1px rgba(0,0,0,0.50);
   box-shadow: 0 0 8px 1px rgba(0,0,0,0.50);
 }
+
+.strong {
+  font-weight: bold;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}

@@ -11,7 +11,7 @@ export class RouterLinkDirective {
   constructor(private rs: RoutingService) {
   }
 
-  @HostListener('mousedown', ['$event'])
+  @HostListener('click', ['$event'])
   onMouseDown(event: MouseEvent): void {
     if (event.button === 0) {
       const url = (!this.appRouterLink || this.appRouterLink.length === 0 || this.appRouterLink.startsWith('/'))

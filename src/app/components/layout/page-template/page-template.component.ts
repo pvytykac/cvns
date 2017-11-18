@@ -4,6 +4,7 @@ import {MockDataService} from "../../../data/mock-data.service";
 import {ActivatedRoute} from "@angular/router";
 import {RoutingService} from "../../../service/routing.service";
 import {TranslateService} from "../../../service/translation.service";
+import {DomSanitizer, SafeResourceUrl} from "@angular/platform-browser";
 
 const navItems: NavItem[] = [
   // {url: '', key: 'home', color: 'rgb(0, 0, 0)'},
@@ -21,7 +22,13 @@ const navItems: NavItem[] = [
 })
 export class PageTemplateComponent implements OnInit {
 
-  constructor(private data: MockDataService, private route: ActivatedRoute, private rs: RoutingService, private ts: TranslateService) {
+  mapUrl: SafeResourceUrl;
+
+  constructor(private data: MockDataService, private route: ActivatedRoute, private rs: RoutingService,
+              private ts: TranslateService, private sanitizer: DomSanitizer) {
+    this.mapUrl = this.sanitizer.bypassSecurityTrustResourceUrl("https://www.google.com/maps/embed/v1/place?q="
+      + encodeURIComponent(this.getInfo().address)
+      + "&key=" + encodeURIComponent(this.getInfo().googleApiKey));
   }
 
   ngOnInit() {
@@ -64,6 +71,10 @@ export class PageTemplateComponent implements OnInit {
 
   isNavMenuVisible(): boolean {
     return this.rs.getRoute().indexOf('/', 1) > 0;
+  }
+
+  getMapWidgetUrl(): SafeResourceUrl {
+    return this.mapUrl;
   }
 }
 

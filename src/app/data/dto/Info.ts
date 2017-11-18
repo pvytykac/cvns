@@ -4,4 +4,11 @@ export interface Info {
   email: string;
   phone: string;
   sponsors: string[];
+  googleApiKey: string;
+  links: Link[];
+}
+
+export interface Link {
+  url: string;
+  label: string;
 }

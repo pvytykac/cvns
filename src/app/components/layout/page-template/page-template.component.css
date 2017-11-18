@@ -17,7 +17,7 @@ div#right {
 }
 
 div#locale-picker,
-div#menu{
+div#menu {
   margin-right: 10px;
 }
 
@@ -71,4 +71,57 @@ div#content-wrapper {
 /* footer */
 
 div#footer {
+}
+
+div#footer-content {
+  padding: 20px 20px 0 20px;
+}
+
+iframe#map-widget {
+  margin-top: 20px;
+}
+
+div#footer-content > div {
+  flex: 1 1 50%;
+  min-width: 500px;
+}
+
+div#footer-content > div > div#contact-wrapper {
+  padding-right: 20px;
+  max-height: 570px;
+  overflow-y: hidden;
+}
+
+div#footer-content > div > div#sponsors-wrapper {
+  padding-left: 20px;
+  max-height: 570px;
+  overflow-y: hidden;
+}
+
+div#contact-wrapper > span {
+  display: block;
+  line-height: 150%;
+  font-size: 10pt;
+}
+
+div#links-wrapper,
+div#copyright-wrapper {
+  padding: 20px 0 0 0;
+  text-align: center;
+}
+
+div#copyright-wrapper {
+  padding-bottom: 20px;
+  font-size: 10pt;
+}
+
+div#links-wrapper > * {
+  padding: 0 5px;
+  font-size: 10pt;
+}
+
+div#sponsors-wrapper > span {
+  display: block;
+  font-size: 10pt;
+  line-height: 150%;
 }

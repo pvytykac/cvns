@@ -16,6 +16,8 @@ export class LangCz extends Lang {
   constructor() {
     super();
     this.map["home"] = "Domů";
+    this.map["contact"] = "Kontakt";
+    this.map["sponsors"] = "Sponzoři a dárcové";
     this.map["news"] = "Novinky";
     this.map["about"] = "O nás";
     this.map["people"] = "Lidé";
@@ -35,6 +37,8 @@ export class LangSk extends Lang {
   constructor() {
     super();
     this.map["home"] = "Domov";
+    this.map["contact"] = "Kontakt";
+    this.map["sponsors"] = "Sponzori a darcovia";
     this.map["news"] = "Novinky";
     this.map["about"] = "O nás";
     this.map["people"] = "Ľudia";
@@ -54,6 +58,8 @@ export class LangEn extends Lang {
   constructor() {
     super();
     this.map["home"] = "Home";
+    this.map["contact"] = "Contact";
+    this.map["sponsors"] = "Sponsors and donors";
     this.map["news"] = "News";
     this.map["about"] = "About";
     this.map["people"] = "People";

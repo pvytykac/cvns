@@ -25,5 +25,16 @@
     "Trust pro občanskou společnost ve střední a východní Evropě prostřednictvím Nadace VIA",
     "The Embassy of The United States of America in Prague",
     "Vzdělávací nadace Jana Husa"
+  ],
+  "googleApiKey": "AIzaSyAmx_740z9_K5Bthv-YcWqvLceEl7ZcloU",
+  "links": [
+    {
+      "url": "http://cvns.econ.muni.cz/ssns/",
+      "label": "SSNS"
+    },
+    {
+      "url": "http://www.econ.muni.cz/",
+      "label": "ESF"
+    }
   ]
 }

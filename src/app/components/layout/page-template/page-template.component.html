@@ -29,14 +29,29 @@
   <router-outlet></router-outlet>
 </div>
 <div id="footer" class="highlighted box-shadow">
-  <div>
-    <span>{{getInfo().name}}</span>
-    <span>{{getInfo().address}}</span>
-    <span>{{getInfo().phone}}</span>
-    <span>{{getInfo().email}}</span>
+  <div id="footer-content" class="flex-container">
+    <div>
+      <div id="contact-wrapper">
+        <h2>{{'contact' | translate | async}}:</h2>
+        <span class="strong">{{getInfo().name}}</span>
+        <span>{{getInfo().address}}</span>
+        <span>{{getInfo().phone}}</span>
+        <span>{{getInfo().email}}</span>
+        <iframe id="map-widget" width="100%" height="320" frameborder="0" style="border:0" allowfullscreen [src]="getMapWidgetUrl()"></iframe>
+      </div>
+    </div>
+    <div>
+      <div id="sponsors-wrapper">
+        <h2>{{'sponsors' | translate | async}}:</h2>
+        <!--<ul>-->
+          <span *ngFor="let sponsor of getInfo().sponsors">{{sponsor}}</span>
+        <!--</ul>-->
+      </div>
+    </div>
   </div>
-  <div>
-    <span *ngFor="let sponsor of getInfo().sponsors">{{sponsor}}</span>
+  <div id="links-wrapper">
+    <a *ngFor="let link of getInfo().links" href="{{link.url}}" target="_blank">{{link.label}}</a>
   </div>
-  <span>&copy; 2017 CVNS Uvedená práce (dílo) podléhá licenci Creative Commons Uveďte autora 3.0 Česko</span>
+  <div id="copyright-wrapper">&copy; 2017 CVNS Uvedená práce (dílo) podléhá licenci Creative Commons Uveďte autora 3.0 Česko</div>
 </div>
+
