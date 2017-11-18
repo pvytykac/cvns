@@ -24,7 +24,7 @@ import {TranslationPipe} from './pipes/translation.pipe';
 import {TranslateService} from "./service/translation.service";
 import {RoutingService} from "./service/routing.service";
 import {PageTemplateComponent} from './components/layout/page-template/page-template.component';
-import { RouterLinkDirective } from './directives/my-router-link.directive';
+import { RouterLinkDirective } from './directives/router-link.directive';
 
 @NgModule({
   declarations: [
