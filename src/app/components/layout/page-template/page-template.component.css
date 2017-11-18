@@ -73,10 +73,6 @@ div#content-wrapper {
 div#footer {
 }
 
-div#footer-content {
-  padding: 20px 20px 0 20px;
-}
-
 iframe#map-widget {
   margin-top: 20px;
 }
@@ -90,14 +86,9 @@ div#footer-content h2 {
   margin-top: 0;
 }
 
-div#footer-content > div > div#contact-wrapper {
-  padding-right: 20px;
-  max-height: 570px;
-  overflow-y: hidden;
-}
-
+div#footer-content > div > div#contact-wrapper,
 div#footer-content > div > div#sponsors-wrapper {
-  padding-left: 20px;
+  padding: 20px;
   max-height: 570px;
   overflow-y: hidden;
 }
