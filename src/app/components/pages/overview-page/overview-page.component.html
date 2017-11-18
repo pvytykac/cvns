@@ -1,26 +1,22 @@
 <div id="tiles-wrapper">
   <div id="big-tile">
-    <app-tile title="{{'news' | translate | async}}" color="#f44336" [items]="news()" [route]="'news'" [icon]="'newspaper-o'">
+    <app-tile title="{{'about' | translate | async}}" color="{{getAboutColor()}}" [route]="'about'" [icon]="'info'">
       <ng-template let-item>
-        <app-news-item [item]="item"></app-news-item>
+        <app-about-item></app-about-item>
       </ng-template>
     </app-tile>
   </div>
   <div id="small-tiles">
     <div>
       <div>
-        <app-tile title="{{'about' | translate | async}}" color="#A220B0" [route]="'about'" [icon]="'info'">
+        <app-tile title="{{'news' | translate | async}}" color="{{getNewsColor()}}" [items]="news()" [route]="'news'" [icon]="'newspaper-o'">
           <ng-template let-item>
-            <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eu ultrices ipsum. Sed vestibulum non odio in scelerisque. Aliquam vitae ipsum ac nisl pulvinar dapibus eu a libero. Nam posuere condimentum dapibus. Praesent pretium enim ac iaculis viverra. Aliquam fermentum fringilla hendrerit. Pellentesque facilisis venenatis turpis et egestas. Nam in sollicitudin ante. Proin et nibh condimentum, malesuada nibh vitae, volutpat sem.</span>
-            <p>Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse eu semper odio. Donec tortor ante, condimentum ut nisi non, eleifend dictum turpis. Suspendisse nisl nisi, egestas a ipsum quis, auctor auctor leo. Vivamus sed nibh odio. Suspendisse scelerisque magna ac elit eleifend, nec volutpat neque volutpat. Etiam quis ex porttitor ex cursus rhoncus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Mauris pretium, mauris vitae mattis aliquet, est magna gravida nulla, elementum rutrum nisi lectus in dui. Sed hendrerit est sed lectus tristique, at dictum nulla blandit. Proin risus enim, tincidunt ut facilisis eu, pretium vitae purus. Donec sit amet neque a dui accumsan tincidunt et vel quam. Vivamus aliquet tortor id urna pellentesque, non commodo mi blandit. Mauris metus odio, consectetur et congue placerat, condimentum at dui. Quisque feugiat, lorem ac dignissim hendrerit, dolor enim condimentum mauris, eget dignissim ex nisl vitae urna. Mauris viverra pretium dolor tristique hendrerit.</p>
-            <p>Aliquam felis justo, rhoncus sed rutrum at, rhoncus et urna. Curabitur scelerisque auctor ultricies. Aliquam maximus felis sapien, in suscipit justo sagittis eu. In diam purus, iaculis nec aliquet id, ullamcorper ac leo. Nullam in fermentum nisi, auctor blandit diam. Aliquam scelerisque tempor urna vitae placerat. Fusce nec faucibus lorem. Nullam commodo ex quis est mollis tincidunt. Quisque eros mauris, sagittis vulputate nibh pellentesque, interdum convallis mauris. Fusce tristique dui vitae maximus interdum. Proin malesuada nisi id lorem eleifend efficitur. Vestibulum aliquet porta justo. Donec interdum vel elit a ultrices.</p>
-            <p>In iaculis nulla vitae neque commodo vulputate. Ut sit amet orci interdum, rhoncus neque in, fringilla enim. Morbi id tempor nunc, sed mattis magna. Phasellus porttitor quam eu elit dapibus pulvinar. Aenean id augue massa. Proin ac magna viverra, cursus turpis et, congue tortor. Proin auctor malesuada metus, non aliquam neque consequat ut. In sit amet porta nisl, vel sagittis lectus.</p>
-            <p>Mauris vulputate semper purus gravida pulvinar. Fusce euismod mattis nulla, in tristique lectus tempus ut. Suspendisse laoreet tellus eu gravida gravida. Duis et faucibus leo. Donec non maximus massa. Integer ac mi ac dui rhoncus aliquam. Donec ut tellus in lectus consequat accumsan eget nec turpis. Phasellus pulvinar massa lorem, id rhoncus nulla elementum a. Sed condimentum pellentesque odio, eu viverra mi pulvinar a. Vivamus et euismod ante, eu iaculis justo.</p>
+            <app-news-item [item]="item"></app-news-item>
           </ng-template>
         </app-tile>
       </div>
       <div>
-        <app-tile title="{{'people' | translate | async}}" color="#ff9800" [items]="people()" [route]="'people'" [icon]="'user'">
+        <app-tile title="{{'people' | translate | async}}" color="{{getPeopleColor()}}" [items]="people()" [route]="'people'" [icon]="'user'">
           <ng-template let-item>
             <app-people-item [person]="item"></app-people-item>
           </ng-template>
@@ -29,14 +25,14 @@
     </div>
     <div>
       <div>
-        <app-tile title="{{'projects' | translate | async}}" color="#009688" [items]="projects()" [route]="'projects'" [icon]="'line-chart'">
+        <app-tile title="{{'projects' | translate | async}}" color="{{getProjectsColor()}}" [items]="projects()" [route]="'projects'" [icon]="'pie-chart'">
           <ng-template let-item>
             <app-projects-item [project]="item"></app-projects-item>
           </ng-template>
         </app-tile>
       </div>
       <div>
-        <app-tile title="{{'publications' | translate | async}}" color="#3f51b5" [items]="publications()" [route]="'publications'" [icon]="'book'">
+        <app-tile title="{{'publications' | translate | async}}" color="{{getPublicationsColor()}}" [items]="publications()" [route]="'publications'" [icon]="'book'">
           <ng-template let-item>
             <app-publications-item [publication]="item"></app-publications-item>
           </ng-template>

@@ -25,6 +25,8 @@ import {TranslateService} from "./service/translation.service";
 import {RoutingService} from "./service/routing.service";
 import {PageTemplateComponent} from './components/layout/page-template/page-template.component';
 import { RouterLinkDirective } from './directives/router-link.directive';
+import {NavigationService} from "./service/navigation.service";
+import { AboutItemComponent } from './pages/overview-page/about-item/about-item.component';
 
 @NgModule({
   declarations: [
@@ -47,13 +49,14 @@ import { RouterLinkDirective } from './directives/router-link.directive';
     TranslationPipe,
     PageTemplateComponent,
     RouterLinkDirective,
+    AboutItemComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpModule
   ],
-  providers: [MockDataService, TranslateService, RoutingService],
+  providers: [MockDataService, TranslateService, RoutingService, NavigationService],
   bootstrap: [AppComponent]
 })
 export class AppModule {

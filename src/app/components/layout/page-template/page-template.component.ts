@@ -5,15 +5,7 @@ import {ActivatedRoute} from "@angular/router";
 import {RoutingService} from "../../../service/routing.service";
 import {TranslateService} from "../../../service/translation.service";
 import {DomSanitizer, SafeResourceUrl} from "@angular/platform-browser";
-
-const navItems: NavItem[] = [
-  // {url: '', key: 'home', color: 'rgb(0, 0, 0)'},
-  {url: 'news', key: 'news', color: 'rgb(244, 67, 54)'},
-  {url: 'projects', key: 'projects', color: 'rgb(0, 150, 136)'},
-  {url: 'publications', key: 'publications', color: 'rgb(63, 81, 181)'},
-  {url: 'people', key: 'people', color: 'rgb(255, 152, 0)'},
-  {url: 'about', key: 'about', color: 'rgb(162, 32, 176)'},
-];
+import {NavigationService, NavItem} from "../../../service/navigation.service";
 
 @Component({
   selector: 'app-page-template',
@@ -25,7 +17,7 @@ export class PageTemplateComponent implements OnInit {
   mapUrl: SafeResourceUrl;
 
   constructor(private data: MockDataService, private route: ActivatedRoute, private rs: RoutingService,
-              private ts: TranslateService, private sanitizer: DomSanitizer) {
+              private ts: TranslateService, private sanitizer: DomSanitizer, private ns: NavigationService) {
     this.mapUrl = this.sanitizer.bypassSecurityTrustResourceUrl("https://www.google.com/maps/embed/v1/place?q="
       + encodeURIComponent(this.getInfo().address)
       + "&key=" + encodeURIComponent(this.getInfo().googleApiKey));
@@ -66,7 +58,7 @@ export class PageTemplateComponent implements OnInit {
   }
 
   getNavigationItems(): NavItem[] {
-    return navItems;
+    return this.ns.getNavItems();
   }
 
   isNavMenuVisible(): boolean {
@@ -76,10 +68,4 @@ export class PageTemplateComponent implements OnInit {
   getMapWidgetUrl(): SafeResourceUrl {
     return this.mapUrl;
   }
-}
-
-export interface NavItem {
-  url: string;
-  key: string;
-  color: string;
 }
