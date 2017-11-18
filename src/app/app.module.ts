@@ -26,7 +26,7 @@ import {RoutingService} from "./service/routing.service";
 import {PageTemplateComponent} from './components/layout/page-template/page-template.component';
 import { RouterLinkDirective } from './directives/router-link.directive';
 import {NavigationService} from "./service/navigation.service";
-import { AboutItemComponent } from './pages/overview-page/about-item/about-item.component';
+import { AboutItemComponent } from './components/pages/overview-page/about-item/about-item.component';
 
 @NgModule({
   declarations: [
