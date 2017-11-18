@@ -11,4 +11,5 @@ export interface Info {
 export interface Link {
   url: string;
   label: string;
+  tooltip?: string;
 }

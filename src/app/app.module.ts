@@ -24,9 +24,11 @@ import {TranslationPipe} from './pipes/translation.pipe';
 import {TranslateService} from "./service/translation.service";
 import {RoutingService} from "./service/routing.service";
 import {PageTemplateComponent} from './components/layout/page-template/page-template.component';
-import { RouterLinkDirective } from './directives/router-link.directive';
+import {RouterLinkDirective} from './directives/router-link.directive';
 import {NavigationService} from "./service/navigation.service";
-import { AboutItemComponent } from './components/pages/overview-page/about-item/about-item.component';
+import {AboutItemComponent} from './components/pages/overview-page/about-item/about-item.component';
+import {MaterializeModule} from 'angular2-materialize';
+
 
 @NgModule({
   declarations: [
@@ -54,7 +56,8 @@ import { AboutItemComponent } from './components/pages/overview-page/about-item/
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpModule
+    HttpModule,
+    MaterializeModule
   ],
   providers: [MockDataService, TranslateService, RoutingService, NavigationService],
   bootstrap: [AppComponent]
