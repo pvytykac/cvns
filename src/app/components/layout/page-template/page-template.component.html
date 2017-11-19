@@ -21,8 +21,8 @@
 </main>
 <footer class="page-footer blue-grey darken-4">
   <div class="container">
-    <div class="row">
-      <div class="col 16 s6">
+    <div class="row flex">
+      <div class="footer-col">
         <h5>{{'contact' | translate | async}}:</h5>
         <ul>
           <li><strong>{{getInfo().name}}</strong></li>
@@ -32,7 +32,7 @@
         </ul>
         <iframe id="map-widget" width="100%" height="320" frameborder="0" style="border:0" allowfullscreen [src]="getMapWidgetUrl()"></iframe>
       </div>
-      <div class="col 16 s5 offset-l1">
+      <div class="footer-col">
         <h5 class="white-text">{{'sponsors' | translate | async}}:</h5>
         <ul>
           <li *ngFor="let sponsor of getInfo().sponsors">{{sponsor}}</li>
