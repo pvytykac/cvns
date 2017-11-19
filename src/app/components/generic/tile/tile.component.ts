@@ -1,5 +1,6 @@
-import {Component, ContentChild, Input, OnInit, TemplateRef} from '@angular/core';
+import {AfterViewInit, Component, ContentChild, ElementRef, Input, OnInit, TemplateRef, ViewChild} from '@angular/core';
 import {Router, RouterLink} from "@angular/router";
+import {Observable} from "rxjs/Observable";
 
 @Component({
   selector: 'app-tile',
@@ -10,20 +11,17 @@ export class TileComponent implements OnInit {
 
   @Input() title: string;
   @Input() color: string;
-  @Input() items?: any[];
+  @Input() height: number;
   @Input() route?: RouterLink;
   @Input() icon?: string;
-  @ContentChild(TemplateRef) itemTemplate: TemplateRef<any>;
 
   constructor() {}
 
   ngOnInit() {
   }
 
-  getStyle(): any {
-    return {
-      backgroundColor: this.color
-    };
+  getHeight(): number {
+    return this.height - 121;
   }
 
 }

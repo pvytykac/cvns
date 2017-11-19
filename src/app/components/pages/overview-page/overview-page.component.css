@@ -11,16 +11,26 @@ div#tiles-wrapper > div, div#small-tiles > div, div#small-tiles > div > div {
   flex: 1 1 50%;
 }
 
-div#big-tile {
-  min-height: 800px;
-  max-height: 800px;
-}
-
-div#small-tiles > div > div {
-  min-height: 400px;
-  max-height: 400px;
-}
-
 div#tiles-wrapper > div, div#small-tiles, div#small-tiles > div > div {
   min-width: 300px;
+}
+
+div#big-tile {
+  padding: 10px 5px 10px 10px;
+}
+
+div#small-tiles > div:first-child > div:first-child {
+  padding: 10px 5px 5px 5px;
+}
+
+div#small-tiles > div:first-child > div:last-child {
+  padding: 10px 10px 5px 5px;
+}
+
+div#small-tiles > div:last-child > div:first-child {
+  padding: 5px 5px 10px 5px;
+}
+
+div#small-tiles > div:last-child > div:last-child {
+  padding: 5px 10px 10px 5px;
 }

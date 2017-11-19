@@ -1,6 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {MockDataService} from "../../../data/mock-data.service";
 import {NavigationService} from "../../../service/navigation.service";
+import {News} from "../../../data/dto/News";
 
 @Component({
   selector: 'app-overview-page',
@@ -9,17 +10,16 @@ import {NavigationService} from "../../../service/navigation.service";
 })
 export class OverviewPageComponent implements OnInit {
 
-  news = this.dataService.getNews;
-  people = this.dataService.getPeople;
-  projects = this.dataService.getProjects;
-  publications = this.dataService.getPublications;
+  news = this.dataService.getNews();
+  people = this.dataService.getPeople();
+  projects = this.dataService.getProjects();
+  publications = this.dataService.getPublications();
 
   constructor(private dataService: MockDataService, private ns: NavigationService) {
   }
 
   ngOnInit() {
   }
-
 
   getNewsColor(): string {
     return this.ns.getColor("news");

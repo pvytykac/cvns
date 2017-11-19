@@ -2,9 +2,9 @@ import {Injectable} from '@angular/core';
 
 const newsColor = "#ff1744";
 const projectsColor = "#00bfa5";
-const publicationsColor = "#2979ff";
+const publicationsColor = "#b388ff";
 const peopleColor = "#ffab40";
-const aboutColor = "#aa00ff";
+const aboutColor = "#2979ff";
 
 const colors = new Map<string, string>();
 colors["news"] = newsColor;

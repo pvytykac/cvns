@@ -1,28 +1,29 @@
-.tile-wrapper {
-  padding: 10px;
-  height: 100%;
-  box-sizing: border-box;
-}
-
 .tile {
-  height: 100%;
-  background-color: white;
+  background-color: #fff;
+  -webkit-transition: -webkit-box-shadow .25s;
+  transition: -webkit-box-shadow .25s;
+  transition: box-shadow .25s;
+  transition: box-shadow .25s, -webkit-box-shadow .25s;
+  border-radius: 2px;
 }
 
-.tile-header {
-  padding: 10px;
+.tile .tile-header .tile-title {
+  display: inline-block;
+  color: #fff;
+  max-width: 100%;
+  padding: 10px 24px;
+  font-size: 24px;
+  font-weight: 300;
 }
 
-.tile-header > h2 {
-  color: white;
-  padding: 0;
-  margin: 0;
-  font-size: 13pt;
-}
-
-.tile-content {
-  padding: 10px;
-  text-align: justify;
+.tile .tile-content {
+  padding: 24px;
+  border-radius: 0 0 2px 2px;
   overflow-y: auto;
-  max-height: calc(100% - 61px);
+}
+
+.tile .tile-actions {
+  border-radius: 0 0 2px 2px;
+  border-top: 1px solid rgba(160,160,160,0.2);
+  padding: 16px 24px;
 }
