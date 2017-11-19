@@ -28,6 +28,7 @@ import {RouterLinkDirective} from './directives/router-link.directive';
 import {NavigationService} from "./service/navigation.service";
 import {AboutItemComponent} from './components/pages/overview-page/about-item/about-item.component';
 import {MaterializeModule} from 'angular2-materialize';
+import { CollectionComponent } from './components/generic/collection/collection.component';
 
 
 @NgModule({
@@ -52,6 +53,7 @@ import {MaterializeModule} from 'angular2-materialize';
     PageTemplateComponent,
     RouterLinkDirective,
     AboutItemComponent,
+    CollectionComponent,
   ],
   imports: [
     BrowserModule,

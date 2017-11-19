@@ -3,12 +3,17 @@
     <li *ngFor="let locale of getLocales()"><a href="#" (click)="setLocale($event, locale)">{{locale}}</a></li>
   </ul>
   <nav>
-    <div class="nav-wrapper blue-grey darken-4">
-      <a href="#" [appRouterLink]="''" class="brand-logo"><i class="material-icons">school</i></a>
-      <ul id="nav-mobile" class="right">
+    <div class="nav-wrapper row blue-grey darken-4">
+      <a href="#" [appRouterLink]="''" class="brand-logo">
+        <img src="" alt="logo"/>
+      </a>
+      <ul id="main-navigation" class="right hide-on-med-and-down">
         <li *ngFor="let navItem of getNavigationItems()"
             [ngClass]="{'active': isNavItemSelected(navItem)}">
-          <a href="#" [appRouterLink]="navItem.url">{{navItem.key | translate | async}}</a>
+          <a href="#" [appRouterLink]="navItem.url">
+            <!--<i class="material-icons left">{{navItem.icon}}</i>-->
+            {{navItem.key | translate | async}}
+          </a>
         </li>
         <li><a href="#" [appRouterLink]="''"><i class="material-icons">home</i></a></li>
         <li><a href="#" class="dropdown-button" data-activates="locale-dropdown"><i class="material-icons">language</i></a></li>
@@ -42,7 +47,7 @@
   </div>
   <div class="footer-copyright blue-grey darken-3">
     <div class="container">
-      © 2014 {{'copyright' | translate | async}}
+      &copy; {{getYear()}} CVNS
       <div class="links right">
         <a *ngFor="let link of getInfo().links" class="grey-text text-lighten-4" data-delay="100" title="{{link.tooltip}}" href="{{link.url}}" target="_blank">{{link.label}}</a>
       </div>

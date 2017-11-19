@@ -17,7 +17,7 @@
 }
 
 .tile .tile-content {
-  padding: 5px 10px 10px 10px;
+  padding: 24px;
   border-radius: 0 0 2px 2px;
   overflow-y: auto;
 }
@@ -26,4 +26,12 @@
   border-radius: 0 0 2px 2px;
   border-top: 1px solid rgba(160,160,160,0.2);
   padding: 16px 24px;
+}
+
+.tile .tile-header {
+  position: relative;
+}
+
+.tile .tile-header .icon {
+  position: absolute; right: 24px;
 }

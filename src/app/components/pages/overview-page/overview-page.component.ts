@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {MockDataService} from "../../../data/mock-data.service";
-import {NavigationService} from "../../../service/navigation.service";
+import {NavigationService, NavItem} from "../../../service/navigation.service";
 import {News} from "../../../data/dto/News";
 
 @Component({
@@ -21,24 +21,24 @@ export class OverviewPageComponent implements OnInit {
   ngOnInit() {
   }
 
-  getNewsColor(): string {
-    return this.ns.getColor("news");
+  getNews(): NavItem {
+    return this.ns.getItem("news");
   }
 
-  getAboutColor(): string {
-    return this.ns.getColor("about");
+  getAbout(): NavItem {
+    return this.ns.getItem("about");
   }
 
-  getPublicationsColor(): string {
-    return this.ns.getColor("publications");
+  getPublications(): NavItem {
+    return this.ns.getItem("publications");
   }
 
-  getProjectsColor(): string {
-    return this.ns.getColor("projects");
+  getProjects(): NavItem {
+    return this.ns.getItem("projects");
   }
 
-  getPeopleColor(): string {
-    return this.ns.getColor("people");
+  getPeople(): NavItem {
+    return this.ns.getItem("people");
   }
 
 }

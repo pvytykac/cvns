@@ -1,6 +1,5 @@
-import {AfterViewInit, Component, ContentChild, ElementRef, Input, OnInit, TemplateRef, ViewChild} from '@angular/core';
-import {Router, RouterLink} from "@angular/router";
-import {Observable} from "rxjs/Observable";
+import {Component, Input, OnInit} from '@angular/core';
+import {NavItem} from "../../../service/navigation.service";
 
 @Component({
   selector: 'app-tile',
@@ -9,11 +8,8 @@ import {Observable} from "rxjs/Observable";
 })
 export class TileComponent implements OnInit {
 
-  @Input() title: string;
-  @Input() color: string;
+  @Input() navItem: NavItem;
   @Input() height: number;
-  @Input() route?: RouterLink;
-  @Input() icon?: string;
 
   constructor() {}
 

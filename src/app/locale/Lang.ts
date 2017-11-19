@@ -23,6 +23,7 @@ export class LangCz extends Lang {
     this.map["people"] = "Lidé";
     this.map["projects"] = "Projekty";
     this.map["publications"] = "Publikace";
+    this.map["more"] = "Víc";
   }
 
   protected getMap(): Map<string, string> {
@@ -44,6 +45,7 @@ export class LangSk extends Lang {
     this.map["people"] = "Ľudia";
     this.map["projects"] = "Projekty";
     this.map["publications"] = "Publikácie";
+    this.map["more"] = "Viac";
   }
 
   protected getMap(): Map<string, string> {
@@ -65,6 +67,7 @@ export class LangEn extends Lang {
     this.map["people"] = "People";
     this.map["projects"] = "Projects";
     this.map["publications"] = "Publications";
+    this.map["more"] = "See more";
   }
 
   protected getMap(): Map<string, string> {

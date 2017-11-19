@@ -6,19 +6,19 @@ const publicationsColor = "#b388ff";
 const peopleColor = "#ffab40";
 const aboutColor = "#2979ff";
 
-const colors = new Map<string, string>();
-colors["news"] = newsColor;
-colors["projects"] = projectsColor;
-colors["publications"] = publicationsColor;
-colors["people"] = peopleColor;
-colors["about"] = aboutColor;
+const map = new Map<string, NavItem>();
+map["news"] = {url: 'news', key: 'news', color: newsColor, icon: 'question_answer'};
+map["projects"] = {url: 'projects', key: 'projects', color: projectsColor, icon: 'business_center'};
+map["publications"] = {url: 'publications', key: 'publications', color: publicationsColor, icon: 'create'};
+map["people"] = {url: 'people', key: 'people', color: peopleColor, icon: 'person'};
+map["about"] = {url: 'about', key: 'about', color: aboutColor, icon: 'info'};
 
 const navItems: NavItem[] = [
-  {url: 'news', key: 'news', color: newsColor},
-  {url: 'projects', key: 'projects', color: projectsColor},
-  {url: 'publications', key: 'publications', color: publicationsColor},
-  {url: 'people', key: 'people', color: peopleColor},
-  {url: 'about', key: 'about', color: aboutColor},
+  map["news"],
+  map["projects"],
+  map["publications"],
+  map["people"],
+  map["about"],
 ];
 
 @Injectable()
@@ -30,8 +30,8 @@ export class NavigationService {
     return navItems;
   }
 
-  getColor(section: string): string {
-    return colors[section];
+  getItem(section: string): NavItem {
+    return map[section];
   }
 
 }
@@ -40,4 +40,5 @@ export interface NavItem {
   url: string;
   key: string;
   color: string;
+  icon: string;
 }

@@ -1,13 +1,18 @@
 <div class="tile">
-  <a href="#" [appRouterLink]="route">
-    <div class="tile-header" [ngStyle]="{'background-color': color}">
-      <span class="tile-title">{{title}}</span>
+  <a href="#" [appRouterLink]="navItem.url">
+    <div class="tile-header" [ngStyle]="{'background-color': navItem.color}">
+      <div class="valign-wrapper">
+        <span class="tile-title">{{navItem.key | translate | async}}</span>
+        <div class="icon valign-wrapper">
+          <i class="material-icons white-text">{{navItem.icon}}</i>
+        </div>
+      </div>
     </div>
   </a>
   <div class="tile-content" [ngStyle]="{'max-height': getHeight() + 'px', 'min-height': getHeight() + 'px'}">
-    <ng-content></ng-content>
+    <ng-content select="[tile-content]"></ng-content>
   </div>
   <div class="tile-actions">
-    <a href="#" [appRouterLink]="route">{{'more' | translate | async}}</a>
+    <a href="#" [appRouterLink]="navItem.url">{{'more' | translate | async}}</a>
   </div>
 </div>

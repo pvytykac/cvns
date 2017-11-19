@@ -1,31 +1,31 @@
 <div id="tiles-wrapper">
   <div id="big-tile">
-    <app-tile title="{{'about' | translate | async}}" color="{{getAboutColor()}}" [route]="'about'" [icon]="'info'" [height]="800">
-      <app-about-item></app-about-item>
+    <app-tile [navItem]="getAbout()" [height]="800">
+      <app-about-item tile-content></app-about-item>
     </app-tile>
   </div>
   <div id="small-tiles">
     <div>
       <div>
-        <app-tile title="{{'news' | translate | async}}" color="{{getNewsColor()}}" [route]="'news'" [icon]="'newspaper-o'" [height]="400">
-          <app-news-item></app-news-item>
+        <app-tile [navItem]="getNews()" [height]="400">
+          <app-news-item tile-content></app-news-item>
         </app-tile>
       </div>
       <div>
-        <app-tile title="{{'people' | translate | async}}" color="{{getPeopleColor()}}" [route]="'people'" [icon]="'user'" [height]="400">
-          <app-people-item></app-people-item>
+        <app-tile [navItem]="getPeople()" [height]="400">
+          <app-people-item tile-content></app-people-item>
         </app-tile>
       </div>
     </div>
     <div>
       <div>
-        <app-tile title="{{'projects' | translate | async}}" color="{{getProjectsColor()}}" [route]="'projects'" [icon]="'pie-chart'" [height]="400">
-          <app-projects-item></app-projects-item>
+        <app-tile [navItem]="getProjects()" [height]="400">
+          <app-projects-item tile-content></app-projects-item>
         </app-tile>
       </div>
       <div>
-        <app-tile title="{{'publications' | translate | async}}" color="{{getPublicationsColor()}}" [route]="'publications'" [icon]="'book'" [height]="400">
-          <app-publications-item></app-publications-item>
+        <app-tile [navItem]="getPublications()" [height]="400">
+          <app-publications-item tile-content></app-publications-item>
         </app-tile>
       </div>
     </div>

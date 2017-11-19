@@ -65,6 +65,10 @@ export class PageTemplateComponent implements OnInit {
     return this.rs.getRoute().indexOf('/', 1) > 0;
   }
 
+  getYear(): number {
+    return new Date().getFullYear();
+  }
+
   getMapWidgetUrl(): SafeResourceUrl {
     return this.mapUrl;
   }

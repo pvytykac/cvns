@@ -14,9 +14,7 @@ export class NewsItemComponent implements OnInit {
 
   constructor(private ds: MockDataService, private el: ElementRef, private renderer: Renderer) {
     this.promise = new Promise(((resolve, reject) => {
-      console.log('promise callback');
       setTimeout( () => {
-        console.log('setTimeout callback');
         resolve(this.ds.getNews());
         this.done = true;
       }, 2000);
