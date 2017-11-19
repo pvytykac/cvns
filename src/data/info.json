@@ -30,6 +30,7 @@
   "links": [
     {
       "url": "http://cvns.econ.muni.cz/ssns/",
+      "tooltip": "No idea what this is!",
       "label": "SSNS"
     },
     {

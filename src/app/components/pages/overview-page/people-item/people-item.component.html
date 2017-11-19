@@ -1,9 +1,7 @@
-<div class="person-item">
-  <div>
-    <img src="{{person.photo}}&version={{person.id}}" class="person-foto"/>
-  </div>
-  <div class="person-info">
-    <span class="person-name">{{person.firstname}} {{person.lastname}}</span>
-    <span class="person-email">{{person.email}}</span>
-  </div>
-</div>
+<ul class="collection">
+  <li class="collection-item avatar" *ngFor="let person of getPeople()">
+    <img [src]="sanitizePhotoUrl(person)" alt="" class="circle person-foto"/>
+    <span class="title">{{person.firstname}} {{person.lastname}}</span>
+    <p>{{person.email}}</p>
+  </li>
+</ul>

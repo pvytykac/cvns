@@ -1,5 +1,6 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {Publication} from "../../../../data/dto/Publication";
+import {MockDataService} from "../../../../data/mock-data.service";
 
 @Component({
   selector: 'app-publications-item',
@@ -8,17 +9,12 @@ import {Publication} from "../../../../data/dto/Publication";
 })
 export class PublicationsItemComponent implements OnInit {
 
-  @Input() publication: Publication;
-
-  constructor() {}
+  constructor(private ds: MockDataService) {}
 
   ngOnInit() {
   }
 
-  getAuthors(): string {
-    return this.publication.authors
-      .map(p => p.firstname + ' ' + p.lastname)
-      .join(', ');
+  getPublications(): Publication[] {
+    return this.ds.getPublications();
   }
-
 }

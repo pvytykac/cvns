@@ -44,7 +44,7 @@
     <div class="container">
       © 2014 {{'copyright' | translate | async}}
       <div class="links right">
-        <a *ngFor="let link of getInfo().links" class="grey-text text-lighten-4" title="{{link.tooltip}}" href="{{link.url}}" target="_blank">{{link.label}}</a>
+        <a *ngFor="let link of getInfo().links" class="grey-text text-lighten-4" data-delay="100" title="{{link.tooltip}}" href="{{link.url}}" target="_blank">{{link.label}}</a>
       </div>
     </div>
   </div>

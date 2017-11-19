@@ -22,11 +22,11 @@ import {PageTemplateComponent} from "./components/layout/page-template/page-temp
             {path: 'news', component: NewsComponent},
             {path: 'about', component: AboutComponent},
             {path: 'people', component: PeopleComponent},
-            {path: 'person/:id', component: PersonComponent},
+            {path: 'people/:id', component: PersonComponent},
             {path: 'projects', component: ProjectsComponent},
-            {path: 'project/:id', component: ProjectComponent},
+            {path: 'projects/:id', component: ProjectComponent},
             {path: 'publications', component: PublicationsComponent},
-            {path: 'publication/:id', component: PublicationComponent}
+            {path: 'publications/:id', component: PublicationComponent}
           ]
         },
         {path: '**', component: ErrorPageComponent},

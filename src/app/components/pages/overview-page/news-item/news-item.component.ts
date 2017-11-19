@@ -1,5 +1,6 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, ElementRef, Input, OnInit, Renderer} from '@angular/core';
 import {News} from "../../../../data/dto/News";
+import {MockDataService} from "../../../../data/mock-data.service";
 
 @Component({
   selector: 'app-news-item',
@@ -8,11 +9,26 @@ import {News} from "../../../../data/dto/News";
 })
 export class NewsItemComponent implements OnInit {
 
-  @Input() item: News;
+  private promise: Promise<News[]>;
+  done = false;
 
-  constructor() { }
+  constructor(private ds: MockDataService, private el: ElementRef, private renderer: Renderer) {
+    this.promise = new Promise(((resolve, reject) => {
+      console.log('promise callback');
+      setTimeout( () => {
+        console.log('setTimeout callback');
+        resolve(this.ds.getNews());
+        this.done = true;
+      }, 2000);
+    }));
+
+  }
 
   ngOnInit() {
+  }
+
+  getNews(): Promise<News[]> {
+    return this.promise;
   }
 
 }

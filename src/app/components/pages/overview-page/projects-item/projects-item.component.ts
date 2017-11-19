@@ -1,5 +1,6 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {Project} from "../../../../data/dto/Project";
+import {MockDataService} from "../../../../data/mock-data.service";
 
 @Component({
   selector: 'app-projects-item',
@@ -8,11 +9,13 @@ import {Project} from "../../../../data/dto/Project";
 })
 export class ProjectsItemComponent implements OnInit {
 
-  @Input() project: Project;
-
-  constructor() { }
+  constructor(private ds: MockDataService) { }
 
   ngOnInit() {
+  }
+
+  getProjects(): Project[] {
+    return this.ds.getProjects();
   }
 
 }

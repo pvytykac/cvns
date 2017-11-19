@@ -1,6 +1,5 @@
-<div class="publication-item">
-  <a href="{{publication.url}}">
-    <span class="publication-authors">{{getAuthors()}}: </span>
-    <span class="publication-name">{{publication.name}}</span>
+<div class="collection">
+  <a class="collection-item" *ngFor="let publication of getPublications()" href="{{publication.url}}" target="_blank">
+    <span class="title">{{publication.name}}</span>
   </a>
 </div>

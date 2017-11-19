@@ -8,24 +8,24 @@
     <div>
       <div>
         <app-tile title="{{'news' | translate | async}}" color="{{getNewsColor()}}" [route]="'news'" [icon]="'newspaper-o'" [height]="400">
-          <app-news-item *ngFor="let item of news" [item]="item"></app-news-item>
+          <app-news-item></app-news-item>
         </app-tile>
       </div>
       <div>
         <app-tile title="{{'people' | translate | async}}" color="{{getPeopleColor()}}" [route]="'people'" [icon]="'user'" [height]="400">
-          <app-people-item *ngFor="let item of people" [person]="item"></app-people-item>
+          <app-people-item></app-people-item>
         </app-tile>
       </div>
     </div>
     <div>
       <div>
         <app-tile title="{{'projects' | translate | async}}" color="{{getProjectsColor()}}" [route]="'projects'" [icon]="'pie-chart'" [height]="400">
-          <app-projects-item *ngFor="let item of projects" [project]="item"></app-projects-item>
+          <app-projects-item></app-projects-item>
         </app-tile>
       </div>
       <div>
         <app-tile title="{{'publications' | translate | async}}" color="{{getPublicationsColor()}}" [route]="'publications'" [icon]="'book'" [height]="400">
-          <app-publications-item *ngFor="let item of publications" [publication]="item"></app-publications-item>
+          <app-publications-item></app-publications-item>
         </app-tile>
       </div>
     </div>

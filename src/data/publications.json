@@ -37,5 +37,44 @@
         "lastname": "Prouzová"
       }
     ]
+  },
+  {
+    "id": 1,
+    "name": "Rozbor financování nestátních neziskových organizací z veřejných rozpočtů v roce 2014",
+    "url": "http://www.vlada.cz/cz/ppov/rnno/dokumenty/rozbor-financovani-nestatnich-neziskovych-organizaci-139318/",
+    "year": 2016,
+    "authors": [
+      {
+        "id": 1,
+        "firstname": "Zuzana",
+        "lastname": "Prouzová"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Why do people give: Motives for charitable giving in the Czech Republic",
+    "url": "http://ctpsr.econ.muni.cz/wp-content/uploads/2015/01/A5_sbornik_2015_bez_znacek.pdf",
+    "year": 2015,
+    "authors": [
+      {
+        "id": 2,
+        "firstname": "Marie",
+        "lastname": "Hladká"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Metamorfózy nadačního práva v Evropě a České republice na počátku 21. století",
+    "url": "http://science.law.muni.cz/knihy/monografie/Ronovska_Metamorfozy_nadacniho_prava.pdf",
+    "year": 2015,
+    "authors": [
+      {
+        "id": 1,
+        "firstname": "Zuzana",
+        "lastname": "Prouzová"
+      }
+    ]
   }
 ]
