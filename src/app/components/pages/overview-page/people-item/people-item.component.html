@@ -1,7 +1,5 @@
-<ul class="collection">
-  <li class="collection-item avatar" *ngFor="let person of getPeople()">
-    <img [src]="sanitizePhotoUrl(person)" alt="" class="circle person-foto"/>
-    <span class="title">{{person.firstname}} {{person.lastname}}</span>
-    <p>{{person.email}}</p>
-  </li>
-</ul>
+<app-collection [items]="getPeople()">
+  <ng-template let-item>
+    <li>{{item.firstname}} {{item.lastname}}: {{item.email}}</li>
+  </ng-template>
+</app-collection>

@@ -1,9 +1,5 @@
-<ul *ngIf="done" class="collection">
-  <li *ngFor="let item of getNews() | async" class="collection-item">
-    <strong>{{item.title}}</strong><br/>
-    <span>{{item.text}}</span>
-    <div>
-      <div *ngFor="let tag of item.tags" class="chip white-text" [ngStyle]="{'background-color': tag.color}">{{tag.label}}</div>
-    </div>
-  </li>
-</ul>
+<app-collection [promise]="getNews()">
+  <ng-template let-item>
+    <span>{{item.id}}: {{item.text}}</span>
+  </ng-template>
+</app-collection>

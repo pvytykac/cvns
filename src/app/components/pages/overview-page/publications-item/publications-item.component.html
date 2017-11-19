@@ -1,5 +1,5 @@
-<div class="collection">
-  <a class="collection-item" *ngFor="let publication of getPublications()" href="{{publication.url}}" target="_blank">
-    <span class="title">{{publication.name}}</span>
-  </a>
-</div>
+<app-collection [items]="getPublications()">
+  <ng-template let-item>
+    <li>{{item.name}}</li>
+  </ng-template>
+</app-collection>

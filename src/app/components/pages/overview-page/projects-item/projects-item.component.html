@@ -1,7 +1,5 @@
-<div class="collection">
-  <a href="#" class="collection-item avatar" *ngFor="let project of getProjects()" [appRouterLink]="'/projects/' + project.id">
-    <img class="circle" src="{{project.image}}&version={{project.id}}"/>
-    <span class="title">{{project.name}}</span>
-    <p>{{project.from}} - {{project.to}}</p>
-  </a>
-</div>
+<app-collection [items]="getProjects()">
+  <ng-template let-item>
+    <li>{{item.id}}: {{item.name}}</li>
+  </ng-template>
+</app-collection>
