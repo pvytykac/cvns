@@ -1,5 +1,17 @@
 <app-collection [promise]="getNews()">
   <ng-template let-item>
-    <span>{{item.id}}: {{item.text}}</span>
+    <div class="news-item clickable" [appRouterLink]="'news/' + item.id">
+      <div class="news-item-title">
+        <strong>{{item.title}}</strong>
+      </div>
+      <div class="news-item-content">
+        <div class="news-item-body">{{item.text}}</div>
+        <div class="tag-list">
+          <div class="tag-wrapper" *ngFor="let tag of item.tags">
+            <div class="tag white-text" [ngStyle]="{'background-color': tag.color}">{{tag.label}}</div>
+          </div>
+        </div>
+      </div>
+    </div>
   </ng-template>
 </app-collection>

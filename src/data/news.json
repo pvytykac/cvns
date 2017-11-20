@@ -1,189 +1,37 @@
 [
   {
-    "id": "",
+    "id": "1",
     "published": "15. 11. 2017",
     "until": "15. 12. 2017",
     "title": "Zimní škola neziskových studií 2018",
-    "text": "Dovolujeme si vás pozvat na Zimní školu neziskových studií 2018. Bližší informace k dispozici zde: http://cvns.econ.muni.cz/kurzy-seminare/",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eu ultrices ipsum. Sed vestibulum non odio in scelerisque.",
     "tags": [
       {
         "id": "1",
-        "label": "seminář",
-        "color": "orange"
+        "label": "zima",
+        "color": "#123456"
       },
       {
-        "id": "1",
+        "id": "2",
         "label": "kurz",
         "color": "blue"
       }
     ]
   },
   {
-    "id": "",
+    "id": "2",
     "published": "15. 11. 2017",
     "until": "15. 12. 2017",
-    "title": "Zimní škola neziskových studií 2018",
-    "text": "Dovolujeme si vás pozvat na Zimní školu neziskových studií 2018. Bližší informace k dispozici zde: http://cvns.econ.muni.cz/kurzy-seminare/",
+    "title": "Letní škola neziskových studií 2017",
+    "text": "Aliquam vitae ipsum ac nisl pulvinar dapibus eu a libero. Nam posuere condimentum dapibus. Praesent pretium enim ac iaculis viverra",
     "tags": [
       {
-        "id": "1",
-        "label": "seminář",
+        "id": "3",
+        "label": "leto",
         "color": "orange"
       },
       {
-        "id": "1",
-        "label": "kurz",
-        "color": "blue"
-      }
-    ]
-  },
-  {
-    "id": "",
-    "published": "15. 11. 2017",
-    "until": "15. 12. 2017",
-    "title": "Zimní škola neziskových studií 2018",
-    "text": "Dovolujeme si vás pozvat na Zimní školu neziskových studií 2018. Bližší informace k dispozici zde: http://cvns.econ.muni.cz/kurzy-seminare/",
-    "tags": [
-      {
-        "id": "1",
-        "label": "seminář",
-        "color": "orange"
-      },
-      {
-        "id": "1",
-        "label": "kurz",
-        "color": "blue"
-      }
-    ]
-  },
-  {
-    "id": "",
-    "published": "15. 11. 2017",
-    "until": "15. 12. 2017",
-    "title": "Zimní škola neziskových studií 2018",
-    "text": "Dovolujeme si vás pozvat na Zimní školu neziskových studií 2018. Bližší informace k dispozici zde: http://cvns.econ.muni.cz/kurzy-seminare/",
-    "tags": [
-      {
-        "id": "1",
-        "label": "seminář",
-        "color": "orange"
-      },
-      {
-        "id": "1",
-        "label": "kurz",
-        "color": "blue"
-      }
-    ]
-  },
-  {
-    "id": "",
-    "published": "15. 11. 2017",
-    "until": "15. 12. 2017",
-    "title": "Zimní škola neziskových studií 2018",
-    "text": "Dovolujeme si vás pozvat na Zimní školu neziskových studií 2018. Bližší informace k dispozici zde: http://cvns.econ.muni.cz/kurzy-seminare/",
-    "tags": [
-      {
-        "id": "1",
-        "label": "seminář",
-        "color": "orange"
-      },
-      {
-        "id": "1",
-        "label": "kurz",
-        "color": "blue"
-      }
-    ]
-  },
-  {
-    "id": "",
-    "published": "15. 11. 2017",
-    "until": "15. 12. 2017",
-    "title": "Zimní škola neziskových studií 2018",
-    "text": "Dovolujeme si vás pozvat na Zimní školu neziskových studií 2018. Bližší informace k dispozici zde: http://cvns.econ.muni.cz/kurzy-seminare/",
-    "tags": [
-      {
-        "id": "1",
-        "label": "seminář",
-        "color": "orange"
-      },
-      {
-        "id": "1",
-        "label": "kurz",
-        "color": "blue"
-      }
-    ]
-  },
-  {
-    "id": "",
-    "published": "15. 11. 2017",
-    "until": "15. 12. 2017",
-    "title": "Zimní škola neziskových studií 2018",
-    "text": "Dovolujeme si vás pozvat na Zimní školu neziskových studií 2018. Bližší informace k dispozici zde: http://cvns.econ.muni.cz/kurzy-seminare/",
-    "tags": [
-      {
-        "id": "1",
-        "label": "seminář",
-        "color": "orange"
-      },
-      {
-        "id": "1",
-        "label": "kurz",
-        "color": "blue"
-      }
-    ]
-  },
-  {
-    "id": "",
-    "published": "15. 11. 2017",
-    "until": "15. 12. 2017",
-    "title": "Zimní škola neziskových studií 2018",
-    "text": "Dovolujeme si vás pozvat na Zimní školu neziskových studií 2018. Bližší informace k dispozici zde: http://cvns.econ.muni.cz/kurzy-seminare/",
-    "tags": [
-      {
-        "id": "1",
-        "label": "seminář",
-        "color": "orange"
-      },
-      {
-        "id": "1",
-        "label": "kurz",
-        "color": "blue"
-      }
-    ]
-  },
-  {
-    "id": "",
-    "published": "15. 11. 2017",
-    "until": "15. 12. 2017",
-    "title": "Zimní škola neziskových studií 2018",
-    "text": "Dovolujeme si vás pozvat na Zimní školu neziskových studií 2018. Bližší informace k dispozici zde: http://cvns.econ.muni.cz/kurzy-seminare/",
-    "tags": [
-      {
-        "id": "1",
-        "label": "seminář",
-        "color": "orange"
-      },
-      {
-        "id": "1",
-        "label": "kurz",
-        "color": "blue"
-      }
-    ]
-  },
-  {
-    "id": "",
-    "published": "15. 11. 2017",
-    "until": "15. 12. 2017",
-    "title": "Zimní škola neziskových studií 2018",
-    "text": "Dovolujeme si vás pozvat na Zimní školu neziskových studií 2018. Bližší informace k dispozici <a href=\"http://cvns.econ.muni.cz/kurzy-seminare/\">zde</a>",
-    "tags": [
-      {
-        "id": "1",
-        "label": "seminář",
-        "color": "orange"
-      },
-      {
-        "id": "1",
+        "id": "4",
         "label": "kurz",
         "color": "blue"
       }

@@ -1,0 +1,24 @@
+.news-item {
+  margin-bottom: 20px;
+  padding: 24px;
+}
+
+.news-item .news-item-title,
+.news-item .news-item-content .news-item-body {
+  text-align: justify;
+  margin-bottom: 10px;
+}
+
+.tag-list .tag-wrapper {
+  display: inline-block;
+  position: relative;
+}
+
+.tag-list .tag {
+  padding: 0 10px;
+  border-radius: 10px;
+  margin-right: 2px;
+  position: relative;
+  left: -4px;;
+  display: inline-block;
+}
