@@ -1,5 +1,15 @@
 <app-collection [items]="getPeople()">
   <ng-template let-item>
-    <li>{{item.firstname}} {{item.lastname}}: {{item.email}}</li>
+    <div class="person-item valign-wrapper">
+      <div class="person-photo">
+        <img class="circle" src="{{item.photo}}&version={{item.id}}" alt="photo"/>
+      </div>
+      <div class="person-details">
+        <ul>
+          <li>{{item.firstname}} {{item.lastname}}</li>
+          <li>{{item.email}}</li>
+        </ul>
+      </div>
+    </div>
   </ng-template>
 </app-collection>
