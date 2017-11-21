@@ -1,0 +1,10 @@
+.people-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.people-wrapper .person-detail {
+  margin: 15px;
+  display: inline-block;
+  flex: 1 1 300px;
+}
