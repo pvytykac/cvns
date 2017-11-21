@@ -12,12 +12,12 @@ export class NewsItemComponent implements OnInit {
   private promise: Promise<News[]>;
   done = false;
 
-  constructor(private ds: MockDataService, private el: ElementRef, private renderer: Renderer) {
+  constructor(private ds: MockDataService) {
     this.promise = new Promise(((resolve, reject) => {
       setTimeout( () => {
         resolve(this.ds.getNews());
         this.done = true;
-      }, 2000);
+      }, 600);
     }));
 
   }

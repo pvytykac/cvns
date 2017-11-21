@@ -9,12 +9,29 @@ import {MockDataService} from "../../../../data/mock-data.service";
 })
 export class PublicationsItemComponent implements OnInit {
 
-  constructor(private ds: MockDataService) {}
+  private promise: Promise<Map<number, Publication[]>>;
+
+  constructor(private ds: MockDataService) {
+    this.promise = new Promise<Map<number, Publication[]>>(((resolve, reject) => {
+      setTimeout( () => {
+        const map: Map<number, Publication[]> = new Map();
+        this.ds.getPublications().forEach(p => {
+          if (map[p.year]) {
+            map[p.year].push(p);
+          } else {
+            map[p.year] = [p];
+          }
+        });
+
+        resolve(map);
+      }, 1200);
+    }));
+  }
 
   ngOnInit() {
   }
 
-  getPublications(): Publication[] {
-    return this.ds.getPublications();
+  getPublications(): Promise<Map<number, Publication[]>> {
+    return this.promise;
   }
 }

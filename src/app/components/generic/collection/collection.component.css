@@ -1,3 +1,7 @@
 .app-collection .app-collection-items .app-collection-item {
   padding-bottom: 20px;
 }
+
+.app-collection .app-collection-items {
+  margin-bottom: 0;
+}

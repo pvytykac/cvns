@@ -1,5 +1,8 @@
-<app-collection [items]="getPublications()">
+<app-collection [promise]="getPublications()">
   <ng-template let-item>
-    <li>{{item.name}}</li>
+    <div class="row valign-wrapper">
+      <div class="col inline s11">{{item.name}}</div>
+      <div class="col inline right s1"><a href="{{item.url}}" target="_blank"><i class="material-icons">file_download</i></a></div>
+    </div>
   </ng-template>
 </app-collection>

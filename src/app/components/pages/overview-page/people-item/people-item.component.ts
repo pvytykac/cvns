@@ -1,4 +1,4 @@
-import {Component, Input, OnInit, Sanitizer, SecurityContext} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {Person} from "../../../../data/dto/Person";
 import {MockDataService} from "../../../../data/mock-data.service";
 import {DomSanitizer, SafeResourceUrl} from "@angular/platform-browser";
@@ -10,13 +10,21 @@ import {DomSanitizer, SafeResourceUrl} from "@angular/platform-browser";
 })
 export class PeopleItemComponent implements OnInit {
 
-  constructor(private ds: MockDataService, private sanitizer: DomSanitizer) { }
+  private promise: Promise<Person[]>;
+
+  constructor(private ds: MockDataService, private sanitizer: DomSanitizer) {
+    this.promise = new Promise<Person[]>(((resolve, reject) => {
+      setTimeout( () => {
+        resolve(this.ds.getPeople());
+      }, 400);
+    }));
+  }
 
   ngOnInit() {
   }
 
-  getPeople(): Person[] {
-    return this.ds.getPeople();
+  getPeople(): Promise<Person[]> {
+    return this.promise;
   }
 
   sanitizePhotoUrl(person: Person): SafeResourceUrl {

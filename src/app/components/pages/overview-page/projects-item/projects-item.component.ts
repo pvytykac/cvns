@@ -9,13 +9,21 @@ import {MockDataService} from "../../../../data/mock-data.service";
 })
 export class ProjectsItemComponent implements OnInit {
 
-  constructor(private ds: MockDataService) { }
+  private promise: Promise<Project[]>;
+
+  constructor(private ds: MockDataService) {
+    this.promise = new Promise<Project[]>(((resolve, reject) => {
+      setTimeout( () => {
+        resolve(this.ds.getProjects());
+      }, 700);
+    }));
+  }
 
   ngOnInit() {
   }
 
-  getProjects(): Project[] {
-    return this.ds.getProjects();
+  getProjects(): Promise<Project[]> {
+    return this.promise;
   }
 
 }

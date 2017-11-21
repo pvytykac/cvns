@@ -1,4 +1,4 @@
-<app-collection [items]="getPeople()">
+<app-collection [promise]="getPeople()">
   <ng-template let-item>
     <div class="person-item valign-wrapper">
       <div class="person-photo">
@@ -6,7 +6,7 @@
       </div>
       <div class="person-details">
         <ul>
-          <li>{{item.firstname}} {{item.lastname}}</li>
+          <li><strong>{{item.firstname}} {{item.lastname}}</strong></li>
           <li>{{item.email}}</li>
         </ul>
       </div>
