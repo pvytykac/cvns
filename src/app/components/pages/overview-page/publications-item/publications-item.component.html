@@ -1,7 +1,10 @@
 <app-collection [promise]="getPublications()">
   <ng-template let-item>
     <div class="publication-group">
-      <h5>{{item.year}}</h5>
+      <div>
+        <span><strong>{{item.year}}</strong></span>
+        <span class="badge new" data-badge-caption="">{{item.publications.length}}</span>
+      </div>
       <hr/>
       <app-collection [items]="item.publications">
         <ng-template let-item>
