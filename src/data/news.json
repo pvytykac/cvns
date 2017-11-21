@@ -36,5 +36,81 @@
         "color": "blue"
       }
     ]
+  },
+  {
+    "id": "3",
+    "published": "15. 11. 2017",
+    "until": "15. 12. 2017",
+    "title": "Zimní škola neziskových studií 2015",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eu ultrices ipsum. Sed vestibulum non odio in scelerisque.",
+    "tags": [
+      {
+        "id": "1",
+        "label": "zima",
+        "color": "#123456"
+      },
+      {
+        "id": "2",
+        "label": "kurz",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "id": "4",
+    "published": "15. 11. 2017",
+    "until": "15. 12. 2017",
+    "title": "Letní škola neziskových studií 2014",
+    "text": "Aliquam vitae ipsum ac nisl pulvinar dapibus eu a libero. Nam posuere condimentum dapibus. Praesent pretium enim ac iaculis viverra",
+    "tags": [
+      {
+        "id": "3",
+        "label": "leto",
+        "color": "orange"
+      },
+      {
+        "id": "4",
+        "label": "kurz",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "id": "5",
+    "published": "15. 11. 2017",
+    "until": "15. 12. 2017",
+    "title": "Zimní škola neziskových studií 2013",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eu ultrices ipsum. Sed vestibulum non odio in scelerisque.",
+    "tags": [
+      {
+        "id": "1",
+        "label": "zima",
+        "color": "#123456"
+      },
+      {
+        "id": "2",
+        "label": "kurz",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "id": "6",
+    "published": "15. 11. 2017",
+    "until": "15. 12. 2017",
+    "title": "Letní škola neziskových studií 2012",
+    "text": "Aliquam vitae ipsum ac nisl pulvinar dapibus eu a libero. Nam posuere condimentum dapibus. Praesent pretium enim ac iaculis viverra",
+    "tags": [
+      {
+        "id": "3",
+        "label": "leto",
+        "color": "orange"
+      },
+      {
+        "id": "4",
+        "label": "kurz",
+        "color": "blue"
+      }
+    ]
   }
 ]

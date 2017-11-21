@@ -1,7 +1,7 @@
-.app-collection .app-collection-items .app-collection-item {
+.app-collection .app-collection-items .app-collection-item:not(:last-child) {
   padding-bottom: 20px;
 }
 
 .app-collection .app-collection-items {
-  margin-bottom: 0;
+  margin: 0;
 }

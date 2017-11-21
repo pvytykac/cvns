@@ -1,8 +1,20 @@
 <app-collection [promise]="getPublications()">
   <ng-template let-item>
-    <div class="row valign-wrapper">
-      <div class="col inline s11">{{item.name}}</div>
-      <div class="col inline right s1"><a href="{{item.url}}" target="_blank"><i class="material-icons">file_download</i></a></div>
+    <div class="publication-group">
+      <h5>{{item.year}}</h5>
+      <hr/>
+      <app-collection [items]="item.publications">
+        <ng-template let-item>
+          <div class="publication-item valign-wrapper">
+            <div class="publication-item-name">{{item.name}}</div>
+            <div class="publication-item-action">
+              <a href="{{item.url}}" target="_blank">
+                <i class="material-icons small">file_download</i>
+              </a>
+            </div>
+          </div>
+        </ng-template>
+      </app-collection>
     </div>
   </ng-template>
 </app-collection>

@@ -9,21 +9,31 @@ import {MockDataService} from "../../../../data/mock-data.service";
 })
 export class PublicationsItemComponent implements OnInit {
 
-  private promise: Promise<Map<number, Publication[]>>;
+  private promise: Promise<GroupedByYear[]>;
 
   constructor(private ds: MockDataService) {
-    this.promise = new Promise<Map<number, Publication[]>>(((resolve, reject) => {
+    this.promise = new Promise<GroupedByYear[]>(((resolve, reject) => {
       setTimeout( () => {
+        const pubs = this.ds.getPublications();
         const map: Map<number, Publication[]> = new Map();
-        this.ds.getPublications().forEach(p => {
-          if (map[p.year]) {
-            map[p.year].push(p);
+
+        pubs.forEach(p => {
+          if (map.has(p.year)) {
+            map.get(p.year).push(p);
           } else {
-            map[p.year] = [p];
+            map.set(p.year, [p]);
           }
         });
 
-        resolve(map);
+        console.log(map.entries());
+        const array: GroupedByYear[] = [];
+        for (let key of Array.from(map.keys())) {
+          console.log(key);
+          array.push({"year": key, "publications": map.get(key)});
+        }
+
+        console.log(array);
+        resolve(array);
       }, 1200);
     }));
   }
@@ -31,7 +41,12 @@ export class PublicationsItemComponent implements OnInit {
   ngOnInit() {
   }
 
-  getPublications(): Promise<Map<number, Publication[]>> {
+  getPublications(): Promise<GroupedByYear[]> {
     return this.promise;
   }
+}
+
+export interface GroupedByYear {
+  year: number;
+  publications: Publication[];
 }
