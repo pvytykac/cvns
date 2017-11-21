@@ -3,11 +3,11 @@
   height: 75px;
 }
 
-.project-item > * {
-  vertical-align: top;
-}
-
 .project-item .project-item-body {
   display: inline-block;
   margin-left: 10px;
+}
+
+.project-item {
+  align-items: start;
 }
