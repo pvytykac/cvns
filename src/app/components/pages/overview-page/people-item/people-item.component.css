@@ -1,6 +1,5 @@
 .person-item .person-photo,
 .person-item .person-photo img {
-  display: inline-block;
   width: 50px;
   height: 50px;
 }

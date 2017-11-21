@@ -1,5 +1,17 @@
 <app-collection [promise]="getProjects()">
   <ng-template let-item>
-    <li>{{item.id}}: {{item.name}}</li>
+    <div class="project-item valign-wrapper">
+      <div class="project-item-image col s3">
+        <img src="{{item.image}}"/>
+      </div>
+      <div class="project-item-body">
+        <div class="project-item-name">
+          <strong>{{item.name}}</strong>
+        </div>
+        <div class="project-item-range">
+          <span>{{item.from}} - {{item.to}}</span>
+        </div>
+      </div>
+    </div>
   </ng-template>
 </app-collection>

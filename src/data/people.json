@@ -4,7 +4,7 @@
     "firstname": "Zuzana",
     "lastname": "Arnerová",
     "email": "abcdef@mail.muni.cz",
-    "photo": "http://place-hold.it/100x100",
+    "photo": "http://place-hold.it/50x50",
     "bio": "http://www.muni.cz/people/401328/cv",
     "fields": [
       {
@@ -22,7 +22,7 @@
     "firstname": "Marie",
     "lastname": "Hladká",
     "email": "abcdef@mail.muni.cz",
-    "photo": "http://place-hold.it/100x100",
+    "photo": "http://place-hold.it/50x50",
     "bio": "http://www.muni.cz/people/62635/cv",
     "fields": [
       {
@@ -48,7 +48,7 @@
     "firstname": "Vladimír",
     "lastname": "Hyánek",
     "email": "abcdef@mail.muni.cz",
-    "photo": "http://place-hold.it/100x100",
+    "photo": "http://place-hold.it/50x50",
     "bio": "http://is.muni.cz/zivotopisy/cv.pl?uco=1953;lang=cs",
     "fields": [
       {
@@ -70,7 +70,7 @@
     "firstname": "Jaroslav",
     "lastname": "Benák",
     "email": "abcdef@mail.muni.cz",
-    "photo": "http://place-hold.it/100x100",
+    "photo": "http://place-hold.it/50x50",
     "bio": "http://www.muni.cz/people/170356/publications",
     "fields": [
       {
@@ -88,7 +88,7 @@
     "firstname": "Ondřej",
     "lastname": "Císař",
     "email": "abcdef@mail.muni.cz",
-    "photo": "http://place-hold.it/100x100",
+    "photo": "http://place-hold.it/50x50",
     "bio": "http://www.muni.cz/people/7594/cv",
     "fields": [
       {
@@ -114,7 +114,7 @@
     "firstname": "Lukáš",
     "lastname": "Fasora",
     "email": "abcdef@mail.muni.cz",
-    "photo": "http://place-hold.it/100x100",
+    "photo": "http://place-hold.it/50x50",
     "bio": "http://www.muni.cz/people/6736/publications",
     "fields": [
       {
