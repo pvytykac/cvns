@@ -31,12 +31,23 @@
     {
       "url": "http://cvns.econ.muni.cz/ssns/",
       "tooltip": "No idea what this is!",
-      "label": "SSNS"
+      "label": "SSNS",
+      "bottom": true,
+      "top": false
     },
     {
       "url": "http://www.econ.muni.cz/",
       "tooltip": "Ekonomicko správní fakulta MUNI",
-      "label": "ESF"
+      "label": "ESF",
+      "bottom": true,
+      "top": true
+    },
+    {
+      "url": "https://www.muni.cz/en",
+      "tooltip": "Masarykova univerzita",
+      "label": "MUNI",
+      "bottom": true,
+      "top": true
     }
   ]
 }
