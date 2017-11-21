@@ -1,4 +1,5 @@
 .tile {
+  box-shadow: 0 1px 2px rgba(0,0,0,0.35);
   background-color: #fff;
   -webkit-transition: -webkit-box-shadow .25s;
   transition: -webkit-box-shadow .25s;
@@ -19,7 +20,6 @@
 .tile .tile-content {
   padding: 16px 24px;
   border-radius: 0 0 2px 2px;
-  overflow-y: auto;
 }
 
 .tile .tile-actions {
@@ -34,4 +34,22 @@
 
 .tile .tile-header .icon {
   position: absolute; right: 24px;
+}
+
+.tile .tile-scrollbox {
+  overflow: auto;
+  visibility: hidden;
+}
+
+.tile .tile-scrollbox:focus,
+.tile .tile-scrollbox:hover,
+.tile .tile-content {
+  visibility: visible;
+}
+
+.tile-scrollbox.delayed {
+  transition: visibility 0.2s;
+}
+.tile-scrollbox.delayed:hover {
+  transition: visibility 0s 0.2s;
 }

@@ -9,8 +9,10 @@
       </div>
     </div>
   </a>
-  <div class="tile-content" [ngStyle]="{'max-height': getHeight() + 'px', 'min-height': getHeight() + 'px'}">
-    <ng-content select="[tile-content]"></ng-content>
+  <div class="tile-scrollbox delayed">
+    <div class="tile-content" [ngStyle]="{'max-height': getHeight() + 'px', 'min-height': getHeight() + 'px'}">
+      <ng-content select="[tile-content]"></ng-content>
+    </div>
   </div>
   <div class="tile-actions">
     <a href="#" [appRouterLink]="navItem.url">{{'more' | translate | async}}</a>
