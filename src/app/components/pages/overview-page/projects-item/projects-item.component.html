@@ -2,15 +2,19 @@
   <ng-template let-item>
     <div class="project-item valign-wrapper">
       <div class="project-item-image">
-        <img src="{{item.image}}"/>
+        <a href="#" [appRouterLink]="'/projects/' + item.id">
+          <img src="{{item.image}}"/>
+        </a>
       </div>
       <div class="project-item-body">
-        <div class="project-item-name">
-          <strong>{{item.name}}</strong>
-        </div>
-        <div class="project-item-range">
-          <span>{{item.from}} - {{item.to}}</span>
-        </div>
+        <a href="#" [appRouterLink]="'/projects/' + item.id">
+          <div class="project-item-name">
+            <span>{{item.name}}</span>
+          </div>
+          <div class="project-item-range">
+            <span>{{item.from}} - {{item.to}}</span>
+          </div>
+        </a>
       </div>
     </div>
   </ng-template>

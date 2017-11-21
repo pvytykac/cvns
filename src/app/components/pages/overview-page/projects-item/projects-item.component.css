@@ -11,3 +11,7 @@
 .project-item {
   align-items: start;
 }
+
+.project-item a {
+  color: inherit;
+}
