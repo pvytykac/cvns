@@ -1,15 +1,37 @@
 <div class="card">
-  <div class="card-image waves-effect waves-block waves-light">
+  <div class="card-image tooltipped" data-tooltip="I am a tooltip">
     <img class="activator" src="{{person.photo}}">
+    <a *ngIf="person.email" href="mailto:{{person.email}}" style="right: 10px;"
+       class="btn-floating halfway-fab waves-effect waves-light blue"
+       title="{{'mailto.tooltip' | translate | async}}">
+      <i class="material-icons">email</i>
+    </a>
+    <a *ngIf="person.muniUrl" target="_blank" href="{{person.muniUrl}}" [ngStyle]="{'right.px': (person.email) ? 55 : 10}"
+       title="{{'muni.person.page.tooltip' | translate | async}}"
+       class="btn-floating halfway-fab waves-effect waves-light red">
+      <i class="material-icons">school</i>
+    </a>
   </div>
   <div class="card-content">
-    <span class="card-title activator grey-text text-darken-4">{{person.firstname}} {{person.lastname}}<i class="material-icons right">more_vert</i></span>
+    <span class="card-title activator">
+      {{getFormattedName()}}
+      <i class="material-icons right">expand_less</i>
+    </span>
     <p>{{person.role}}</p>
   </div>
   <div class="card-reveal">
-    <span class="card-title grey-text text-darken-4">Fields:<i class="material-icons right">close</i></span>
+    <span class="card-title activator">
+      {{getFormattedName()}}
+      <i class="material-icons right">expand_more</i>
+    </span>
+    <p class="bio-text">"{{person.bio}}"</p>
+    <span class="section-title">{{'fields' | translate | async}}:</span>
     <ul>
-      <li *ngFor="let field of person.fields">{{field.name}}</li>
+      <li *ngFor="let field of person.fields">{{field.name | capitalize}}</li>
+    </ul>
+    <span class="section-title">{{'publications' | translate | async}}:</span>
+    <ul>
+      <li *ngFor="let publication of person.publications">{{publication.name}}</li>
     </ul>
   </div>
 </div>

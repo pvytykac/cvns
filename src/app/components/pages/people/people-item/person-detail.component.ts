@@ -10,10 +10,15 @@ export class PersonDetailComponent implements OnInit {
 
   @Input() person: Person;
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit() {
     console.log(this.person);
+  }
+
+  getFormattedName(): String {
+    return this.person.titlesBefore + " " + this.person.firstname + " " + this.person.lastname + " " + this.person.titlesAfter;
   }
 
 }

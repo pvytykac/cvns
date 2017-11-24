@@ -15,6 +15,7 @@ export class LangCz extends Lang {
 
   constructor() {
     super();
+    this.map["fields"] = "Pole působnosti";
     this.map["home"] = "Domů";
     this.map["contact"] = "Kontakt";
     this.map["sponsors"] = "Sponzoři a dárcové";
@@ -37,6 +38,7 @@ export class LangSk extends Lang {
 
   constructor() {
     super();
+    this.map["fields"] = "Pole pôsobnosti";
     this.map["home"] = "Domov";
     this.map["contact"] = "Kontakt";
     this.map["sponsors"] = "Sponzori a darcovia";
@@ -59,6 +61,7 @@ export class LangEn extends Lang {
 
   constructor() {
     super();
+    this.map["fields"] = "Areas of expertise";
     this.map["home"] = "Home";
     this.map["contact"] = "Contact";
     this.map["sponsors"] = "Sponsors and donors";

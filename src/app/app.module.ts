@@ -30,6 +30,7 @@ import {AboutItemComponent} from './components/pages/overview-page/about-item/ab
 import {MaterializeModule} from 'angular2-materialize';
 import { CollectionComponent } from './components/generic/collection/collection.component';
 import {PersonDetailComponent} from "./components/pages/people/people-item/person-detail.component";
+import { CapitalizePipe } from './pipes/capitalize.pipe';
 
 
 @NgModule({
@@ -55,7 +56,8 @@ import {PersonDetailComponent} from "./components/pages/people/people-item/perso
     RouterLinkDirective,
     AboutItemComponent,
     CollectionComponent,
-    PersonDetailComponent
+    PersonDetailComponent,
+    CapitalizePipe
   ],
   imports: [
     BrowserModule,

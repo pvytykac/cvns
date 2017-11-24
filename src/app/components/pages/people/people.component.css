@@ -1,10 +1,16 @@
 .people-wrapper {
+  width: 100%;
   display: flex;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
+  margin: 5px;
+  text-align: center;
 }
 
 .people-wrapper .person-detail {
-  margin: 15px;
-  display: inline-block;
-  flex: 1 1 300px;
+  padding: 5px;
+  flex: 1 1 auto;
+  min-width: 300px;
+  max-width: 300px;
+  display: inline-flex;
+  text-align: left;
 }

@@ -8,4 +8,7 @@ export interface Person {
   email?: string;
   info?: string;
   photo?: string;
+  titlesBefore?: string;
+  titlesAfter?: string;
+  muniUrl?: string;
 }

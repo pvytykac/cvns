@@ -3,9 +3,23 @@
     "id": 1,
     "firstname": "Zuzana",
     "lastname": "Arnerová",
+		"titlesBefore": "Ing.",
+		"titlesAfter": "CSc.",
     "email": "abcdef@mail.muni.cz",
-    "photo": "http://place-hold.it/50x50",
-    "bio": "http://www.muni.cz/people/401328/cv",
+    "photo": "http://place-hold.it/300x300",
+    "muniUrl": "http://www.muni.cz/people/401328/cv",
+    "publications": [
+      {
+        "id": 1,
+        "name": "Publication 1"
+      },
+      {
+        "id": 2,
+        "name": "Publication 2"
+      }
+    ],
+    "role": "Project Manager",
+    "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac mattis risus. Morbi pellentesque est sem, pretium volutpat sapien ullamcorper nec. Duis ullamcorper, quam vitae hendrerit laoreet, magna lorem finibus diam, at finibus purus dolor maximus lectus. ",
     "fields": [
       {
         "id": 1,
@@ -21,9 +35,22 @@
     "id": 2,
     "firstname": "Marie",
     "lastname": "Hladká",
+		"titlesBefore": "Mgr.",
+		"titlesAfter": "PhDr.",
     "email": "abcdef@mail.muni.cz",
-    "photo": "http://place-hold.it/50x50",
-    "bio": "http://www.muni.cz/people/62635/cv",
+    "photo": "http://place-hold.it/300x300",
+    "publications": [
+      {
+        "id": 1,
+        "name": "Publication 1"
+      },
+      {
+        "id": 2,
+        "name": "Publication 2"
+      }
+    ],
+    "role": "Project Manager",
+    "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac mattis risus. Morbi pellentesque est sem, pretium volutpat sapien ullamcorper nec. Duis ullamcorper, quam vitae hendrerit laoreet, magna lorem finibus diam, at finibus purus dolor maximus lectus. ",
     "fields": [
       {
         "id": 3,
@@ -47,9 +74,22 @@
     "id": 3,
     "firstname": "Vladimír",
     "lastname": "Hyánek",
-    "email": "abcdef@mail.muni.cz",
-    "photo": "http://place-hold.it/50x50",
-    "bio": "http://is.muni.cz/zivotopisy/cv.pl?uco=1953;lang=cs",
+		"titlesBefore": "Mgr.",
+		"titlesAfter": "PhDr.",
+    "photo": "http://place-hold.it/300x300",
+    "muniUrl": "http://is.muni.cz/zivotopisy/cv.pl?uco=1953;lang=cs",
+    "publications": [
+      {
+        "id": 1,
+        "name": "Publication 1"
+      },
+      {
+        "id": 2,
+        "name": "Publication 2"
+      }
+    ],
+    "role": "CEO",
+    "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac mattis risus. Morbi pellentesque est sem, pretium volutpat sapien ullamcorper nec. Duis ullamcorper, quam vitae hendrerit laoreet, magna lorem finibus diam, at finibus purus dolor maximus lectus. ",
     "fields": [
       {
         "id": 8,
@@ -69,9 +109,22 @@
     "id": 4,
     "firstname": "Jaroslav",
     "lastname": "Benák",
+		"titlesBefore": "Mgr.",
+		"titlesAfter": "PhDr.",
     "email": "abcdef@mail.muni.cz",
-    "photo": "http://place-hold.it/50x50",
-    "bio": "http://www.muni.cz/people/170356/publications",
+    "photo": "http://place-hold.it/300x300",
+    "publications": [
+      {
+        "id": 1,
+        "name": "Publication 1"
+      },
+      {
+        "id": 2,
+        "name": "Publication 2"
+      }
+    ],
+    "role": "Researcher",
+    "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac mattis risus. Morbi pellentesque est sem, pretium volutpat sapien ullamcorper nec. Duis ullamcorper, quam vitae hendrerit laoreet, magna lorem finibus diam, at finibus purus dolor maximus lectus. ",
     "fields": [
       {
         "id": 11,
@@ -87,9 +140,22 @@
     "id": 5,
     "firstname": "Ondřej",
     "lastname": "Císař",
+		"titlesBefore": "Mgr.",
+		"titlesAfter": "PhDr.",
     "email": "abcdef@mail.muni.cz",
-    "photo": "http://place-hold.it/50x50",
-    "bio": "http://www.muni.cz/people/7594/cv",
+    "photo": "http://place-hold.it/300x300",
+    "publications": [
+      {
+        "id": 1,
+        "name": "Publication 1"
+      },
+      {
+        "id": 2,
+        "name": "Publication 2"
+      }
+    ],
+    "role": "Researcher",
+    "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac mattis risus. Morbi pellentesque est sem, pretium volutpat sapien ullamcorper nec. Duis ullamcorper, quam vitae hendrerit laoreet, magna lorem finibus diam, at finibus purus dolor maximus lectus. ",
     "fields": [
       {
         "id": 13,
@@ -113,9 +179,232 @@
     "id": 6,
     "firstname": "Lukáš",
     "lastname": "Fasora",
+		"titlesBefore": "Mgr.",
+		"titlesAfter": "PhDr.",
     "email": "abcdef@mail.muni.cz",
-    "photo": "http://place-hold.it/50x50",
-    "bio": "http://www.muni.cz/people/6736/publications",
+    "photo": "http://place-hold.it/300x300",
+    "publications": [
+      {
+        "id": 1,
+        "name": "Publication 1"
+      },
+      {
+        "id": 2,
+        "name": "Publication 2"
+      }
+    ],
+    "role": "Researcher",
+    "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac mattis risus. Morbi pellentesque est sem, pretium volutpat sapien ullamcorper nec. Duis ullamcorper, quam vitae hendrerit laoreet, magna lorem finibus diam, at finibus purus dolor maximus lectus. ",
+    "fields": [
+      {
+        "id": 17,
+        "name": "vývoj občanské společnosti v 19. století"
+      },
+      {
+        "id": 18,
+        "name": "vzájemné vztahy dělnicta a měšťanstva v moderní éře"
+      },
+      {
+        "id": 19,
+        "name": "otázka sociální mobility a dějin vzdělávání"
+      }
+    ]
+  },
+  {
+    "id": 1,
+    "firstname": "Zuzana",
+    "lastname": "Arnerová",
+		"titlesBefore": "Mgr.",
+		"titlesAfter": "PhDr.",
+    "email": "abcdef@mail.muni.cz",
+    "photo": "http://place-hold.it/300x300",
+    "publications": [
+      {
+        "id": 1,
+        "name": "Publication 1"
+      },
+      {
+        "id": 2,
+        "name": "Publication 2"
+      }
+    ],
+    "role": "Researcher",
+    "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac mattis risus. Morbi pellentesque est sem, pretium volutpat sapien ullamcorper nec. Duis ullamcorper, quam vitae hendrerit laoreet, magna lorem finibus diam, at finibus purus dolor maximus lectus. ",
+    "fields": [
+      {
+        "id": 1,
+        "name": "rozvoj venkova a místní akční skupiny"
+      },
+      {
+        "id": 2,
+        "name": "financování z fondů EU"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "firstname": "Marie",
+    "lastname": "Hladká",
+		"titlesBefore": "Mgr.",
+		"titlesAfter": "PhDr.",
+    "email": "abcdef@mail.muni.cz",
+    "photo": "http://place-hold.it/300x300",
+    "publications": [
+      {
+        "id": 1,
+        "name": "Publication 1"
+      },
+      {
+        "id": 2,
+        "name": "Publication 2"
+      }
+    ],
+    "role": "Researcher",
+    "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac mattis risus. Morbi pellentesque est sem, pretium volutpat sapien ullamcorper nec. Duis ullamcorper, quam vitae hendrerit laoreet, magna lorem finibus diam, at finibus purus dolor maximus lectus. ",
+    "fields": [
+      {
+        "id": 3,
+        "name": "dárcovství a dobrovolnictví"
+      },
+      {
+        "id": 4,
+        "name": "účetní a daňová specifika neziskových organizací"
+      },
+      {
+        "id": 5,
+        "name": "finanční řízení a rozpočetnictví v neziskových organizacích"
+      },
+      {
+        "id": 6,
+        "name": "financování neziskových organizací"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "firstname": "Vladimír",
+    "lastname": "Hyánek",
+		"titlesBefore": "Mgr.",
+		"titlesAfter": "PhDr.",
+    "email": "abcdef@mail.muni.cz",
+    "photo": "http://place-hold.it/300x300",
+    "publications": [
+      {
+        "id": 1,
+        "name": "Publication 1"
+      },
+      {
+        "id": 2,
+        "name": "Publication 2"
+      }
+    ],
+    "role": "Researcher",
+    "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac mattis risus. Morbi pellentesque est sem, pretium volutpat sapien ullamcorper nec. Duis ullamcorper, quam vitae hendrerit laoreet, magna lorem finibus diam, at finibus purus dolor maximus lectus. ",
+    "fields": [
+      {
+        "id": 8,
+        "name": "teorie neziskového sektoru"
+      },
+      {
+        "id": 9,
+        "name": "veřejné služby"
+      },
+      {
+        "id": 10,
+        "name": "sociální inovace"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "firstname": "Jaroslav",
+    "lastname": "Benák",
+		"titlesBefore": "Mgr.",
+		"titlesAfter": "PhDr.",
+    "email": "abcdef@mail.muni.cz",
+    "photo": "http://place-hold.it/300x300",
+    "publications": [
+      {
+        "id": 1,
+        "name": "Publication 1"
+      },
+      {
+        "id": 2,
+        "name": "Publication 2"
+      }
+    ],
+    "role": "Researcher",
+    "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac mattis risus. Morbi pellentesque est sem, pretium volutpat sapien ullamcorper nec. Duis ullamcorper, quam vitae hendrerit laoreet, magna lorem finibus diam, at finibus purus dolor maximus lectus. ",
+    "fields": [
+      {
+        "id": 11,
+        "name": "právní regulace občanských sdružení"
+      },
+      {
+        "id": 12,
+        "name": "právo na přístup k soudu"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "firstname": "Ondřej",
+    "lastname": "Císař",
+		"titlesBefore": "Mgr.",
+		"titlesAfter": "PhDr.",
+    "email": "abcdef@mail.muni.cz",
+    "photo": "http://place-hold.it/300x300",
+    "publications": [
+      {
+        "id": 1,
+        "name": "Publication 1"
+      },
+      {
+        "id": 2,
+        "name": "Publication 2"
+      }
+    ],
+    "role": "Researcher",
+    "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac mattis risus. Morbi pellentesque est sem, pretium volutpat sapien ullamcorper nec. Duis ullamcorper, quam vitae hendrerit laoreet, magna lorem finibus diam, at finibus purus dolor maximus lectus. ",
+    "fields": [
+      {
+        "id": 13,
+        "name": "politická mobilizace"
+      },
+      {
+        "id": 14,
+        "name": "sociální hnutí"
+      },
+      {
+        "id": 15,
+        "name": "transnacionální spolupráce"
+      },
+      {
+        "id": 16,
+        "name": "evropeizace"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "firstname": "Lukáš",
+    "lastname": "Fasora",
+		"titlesBefore": "Mgr.",
+		"titlesAfter": "PhDr.",
+    "email": "abcdef@mail.muni.cz",
+    "photo": "http://place-hold.it/300x300",
+    "publications": [
+      {
+        "id": 1,
+        "name": "Publication 1"
+      },
+      {
+        "id": 2,
+        "name": "Publication 2"
+      }
+    ],
+    "role": "Researcher",
+    "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac mattis risus. Morbi pellentesque est sem, pretium volutpat sapien ullamcorper nec. Duis ullamcorper, quam vitae hendrerit laoreet, magna lorem finibus diam, at finibus purus dolor maximus lectus. ",
     "fields": [
       {
         "id": 17,
