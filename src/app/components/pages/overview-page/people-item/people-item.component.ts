@@ -15,7 +15,10 @@ export class PeopleItemComponent implements OnInit {
   constructor(private ds: MockDataService, private sanitizer: DomSanitizer) {
     this.promise = new Promise<Person[]>(((resolve, reject) => {
       setTimeout( () => {
-        resolve(this.ds.getPeople());
+        resolve(this.ds.getPeople().map(person => {
+          person.photo = person.photo.replace("300x300", "50x50");
+          return person;
+        }));
       }, 400);
     }));
   }
