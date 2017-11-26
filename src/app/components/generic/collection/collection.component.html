@@ -1,9 +1,12 @@
 <div class="app-collection">
-  <div *ngIf="!items && promise">
+  <div *ngIf="!items && !observable && promise">
     <ng-template #loading>
       <div class="progress">
         <div class="indeterminate"></div>
       </div>
+    </ng-template>
+    <ng-template #async>
+
     </ng-template>
     <div *ngIf="promise | async; let items; else loading">
       <ul *ngIf="items && items.length > 0" class="app-collection-items">
@@ -14,7 +17,17 @@
       <span *ngIf="!items && items.length == 0" class="app-collection-empty">{{'no.data' | translate | async}}</span>
     </div>
   </div>
-  <div *ngIf="items && !promise">
+  <div *ngIf="!items && observable && !promise">
+    <div *ngIf="observable | async; let items; else loading">
+      <ul *ngIf="items && items.length > 0" class="app-collection-items">
+        <li class="app-collection-item" *ngFor="let item of items">
+          <ng-template [ngTemplateOutlet]="itemTemplate" [ngTemplateOutletContext]="{ $implicit: item }"></ng-template>
+        </li>
+      </ul>
+      <span *ngIf="!items && items.length == 0" class="app-collection-empty">{{'no.data' | translate | async}}</span>
+    </div>
+  </div>
+  <div *ngIf="items && !observable && !promise">
     <ul *ngIf="items && items.length > 0" class="app-collection-items">
       <li class="app-collection-item" *ngFor="let item of items">
         <ng-template [ngTemplateOutlet]="itemTemplate" [ngTemplateOutletContext]="{ $implicit: item }"></ng-template>

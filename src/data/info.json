@@ -48,6 +48,13 @@
       "label": "MUNI",
       "bottom": true,
       "top": true
+    },
+    {
+      "url": "/admin/people",
+      "tooltip": "Administrace",
+      "label": "ADMIN",
+      "bottom": true,
+      "top": true
     }
   ]
 }

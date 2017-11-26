@@ -2,6 +2,8 @@ import {Component, OnInit} from '@angular/core';
 import {Person} from "../../../../data/dto/Person";
 import {MockDataService} from "../../../../data/mock-data.service";
 import {DomSanitizer, SafeResourceUrl} from "@angular/platform-browser";
+import {RESTDataService} from "../../../../data/rest-data.service";
+import {Observable} from "rxjs/Observable";
 
 @Component({
   selector: 'app-people-item',
@@ -10,28 +12,25 @@ import {DomSanitizer, SafeResourceUrl} from "@angular/platform-browser";
 })
 export class PeopleItemComponent implements OnInit {
 
-  private promise: Promise<Person[]>;
+  observable: Observable<Person[]>;
 
-  constructor(private ds: MockDataService, private sanitizer: DomSanitizer) {
-    this.promise = new Promise<Person[]>(((resolve, reject) => {
-      setTimeout( () => {
-        resolve(this.ds.getPeople().map(person => {
-          person.photo = person.photo.replace("300x300", "50x50");
-          return person;
-        }));
-      }, 400);
-    }));
+  constructor(private api: RESTDataService, private sanitizer: DomSanitizer) {
   }
 
   ngOnInit() {
+    this.observable = this.api.getPeople();
   }
 
-  getPeople(): Promise<Person[]> {
-    return this.promise;
-  }
+  getPhotoUrl(person: Person): SafeResourceUrl {
+    let photo: string;
 
-  sanitizePhotoUrl(person: Person): SafeResourceUrl {
-    return this.sanitizer.bypassSecurityTrustResourceUrl(person.photo + "&version=" + person.id);
+    if (person.photo) {
+      photo = person.photo;
+    } else {
+      photo = "http://place-hold.it/50x50";
+    }
+
+    return this.sanitizer.bypassSecurityTrustResourceUrl(photo);
   }
 
 }

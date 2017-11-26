@@ -1,8 +1,8 @@
-<app-collection [promise]="getPeople()">
+<app-collection [observable]="observable">
   <ng-template let-item>
     <div class="person-item valign-wrapper">
       <div class="person-photo">
-        <img class="circle" src="{{item.photo}}&version={{item.id}}" alt="photo"/>
+        <img class="circle" [src]="getPhotoUrl(item)" alt="photo"/>
       </div>
       <div class="person-details">
         <ul>

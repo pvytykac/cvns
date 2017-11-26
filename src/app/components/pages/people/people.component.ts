@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import {Person} from "../../../data/dto/Person";
 import {MockDataService} from "../../../data/mock-data.service";
+import {Observable} from "rxjs/Observable";
+import {RESTDataService} from "../../../data/rest-data.service";
 
 @Component({
   selector: 'app-people',
@@ -9,20 +11,13 @@ import {MockDataService} from "../../../data/mock-data.service";
 })
 export class PeopleComponent implements OnInit {
 
-  promise: Promise<Person[]>;
+  observable: Observable<Person[]>;
 
-  constructor(private ds: MockDataService) {
+  constructor(private api: RESTDataService) {
   }
 
   ngOnInit() {
-    this.promise = new Promise<Person[]>((accept, reject) => {
-      setTimeout(() => {
-        accept(this.ds.getPeople().map(person => {
-          person.photo = person.photo.replace("50x50", "300x300");
-          return person;
-        }));
-      }, 600);
-    });
+    this.observable = this.api.getPeople();
   }
 
 }

@@ -17,8 +17,32 @@ export class PersonDetailComponent implements OnInit {
     console.log(this.person);
   }
 
-  getFormattedName(): String {
-    return this.person.titlesBefore + " " + this.person.firstname + " " + this.person.lastname + " " + this.person.titlesAfter;
+  getFormattedName(): string {
+    let name = "";
+
+    if (this.person.titlesBefore) {
+      name += this.person.titlesBefore + " ";
+    }
+
+    name += this.person.firstname + " " + this.person.lastname;
+
+    if (this.person.titlesAfter) {
+      name += " " + this.person.titlesAfter;
+    }
+
+    return name;
+  }
+
+  getPhotoUrl(): string {
+    let photo: string;
+
+    if (this.person.photo) {
+      photo = this.person.photo;
+    } else {
+      photo = "http://place-hold.it/300x300";
+    }
+
+    return photo;
   }
 
 }

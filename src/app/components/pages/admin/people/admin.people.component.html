@@ -1,0 +1,25 @@
+<ng-template #loading>
+  <div class="progress">
+    <div class="indeterminate"></div>
+  </div>
+</ng-template>
+<div *ngIf="promise | async; let people; else loading">
+  <table>
+    <thead>
+      <tr>
+        <td>Firstname</td>
+        <td>Lastname</td>
+        <td>&nbsp;</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let person of people">
+        <td>{{person.firstname}}</td>
+        <td>{{person.lastname}}</td>
+        <td>
+          <a href="#" title="edit" [routerLink]="'/admin/people/' + person.id"><i class="material-icons"></i>edit</a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

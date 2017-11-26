@@ -1,0 +1,21 @@
+<div class="row">
+  <form class="col s12" (ngSubmit)="savePerson()">
+    <div class="row">
+      <div class="input-field col s6">
+        <input id="firstname" type="text" class="validate" required [ngModelOptions]="{standalone: true}" [(ngModel)]="person.firstname"/>
+        <label for="firstname" data-error="wrong" data-success="right">Meno</label>
+      </div>
+      <div class="input-field col s6">
+        <input id="lastname" type="text" class="validate" required [ngModelOptions]="{standalone: true}" [(ngModel)]="person.lastname"/>
+        <label for="lastname" data-error="wrong" data-success="right">Priezvisko</label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="input-field col s6">
+        <input id="email" type="text" class="validate" [ngModelOptions]="{standalone: true}" [(ngModel)]="person.email"/>
+        <label for="email" data-error="wrong" data-success="right">E-mail</label>
+      </div>
+    </div>
+    <input type="submit" value="Save"/>
+  </form>
+</div>

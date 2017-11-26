@@ -1,6 +1,6 @@
 <div class="card">
   <div class="card-image tooltipped" data-tooltip="I am a tooltip">
-    <img class="activator" src="{{person.photo}}">
+    <img class="activator" [src]="getPhotoUrl()">
     <a *ngIf="person.email" href="mailto:{{person.email}}" style="right: 10px;"
        class="btn-floating halfway-fab waves-effect waves-light blue"
        title="{{'mailto.tooltip' | translate | async}}">

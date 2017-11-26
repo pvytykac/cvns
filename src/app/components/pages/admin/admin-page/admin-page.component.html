@@ -1,0 +1,17 @@
+<header>
+  <nav>
+    <div class="nav-wrapper row blue-grey darken-4">
+      <ul id="main-navigation" class="right hide-on-med-and-down">
+        <li *ngFor="let navItem of getNavigationItems()"
+            [ngClass]="{'active': isNavItemSelected(navItem)}">
+          <a href="#" [routerLink]="navItem.url">
+            {{navItem.name}}
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
+<main>
+  <router-outlet></router-outlet>
+</main>

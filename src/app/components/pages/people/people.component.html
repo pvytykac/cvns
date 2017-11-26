@@ -4,7 +4,7 @@
       <div class="indeterminate"></div>
     </div>
   </ng-template>
-  <div *ngIf="promise | async; let people; else loading">
+  <div *ngIf="observable | async; let people; else loading">
     <div class="person-detail" *ngFor="let person of people">
       <app-person-detail [person]="person"></app-person-detail>
     </div>

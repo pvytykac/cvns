@@ -28,9 +28,16 @@ import {RouterLinkDirective} from './directives/router-link.directive';
 import {NavigationService} from "./service/navigation.service";
 import {AboutItemComponent} from './components/pages/overview-page/about-item/about-item.component';
 import {MaterializeModule} from 'angular2-materialize';
-import { CollectionComponent } from './components/generic/collection/collection.component';
+import {CollectionComponent} from './components/generic/collection/collection.component';
 import {PersonDetailComponent} from "./components/pages/people/people-item/person-detail.component";
-import { CapitalizePipe } from './pipes/capitalize.pipe';
+import {CapitalizePipe} from './pipes/capitalize.pipe';
+import {AdminPeopleComponent} from "./components/pages/admin/people/admin.people.component";
+import {AdminPageComponent} from './components/pages/admin/admin-page/admin-page.component';
+import {CreatePersonComponent} from './components/pages/admin/people/person/create-person/create-person.component';
+import {RESTDataService} from "./data/rest-data.service";
+import {FormsModule} from "@angular/forms";
+import { UpdatePersonComponent } from './components/pages/admin/people/person/update-person/update-person.component';
+import { ConfigComponent } from './components/pages/admin/config/config.component';
 
 
 @NgModule({
@@ -57,15 +64,21 @@ import { CapitalizePipe } from './pipes/capitalize.pipe';
     AboutItemComponent,
     CollectionComponent,
     PersonDetailComponent,
-    CapitalizePipe
+    CapitalizePipe,
+    AdminPeopleComponent,
+    AdminPageComponent,
+    CreatePersonComponent,
+    UpdatePersonComponent,
+    ConfigComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpModule,
-    MaterializeModule
+    MaterializeModule,
+    FormsModule
   ],
-  providers: [MockDataService, TranslateService, RoutingService, NavigationService],
+  providers: [MockDataService, TranslateService, RoutingService, NavigationService, RESTDataService],
   bootstrap: [AppComponent]
 })
 export class AppModule {
